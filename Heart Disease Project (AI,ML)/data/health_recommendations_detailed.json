@@ -1,0 +1,967 @@
+
+{
+    "Diabetes": {
+        "Healthy": {
+            "Diet": {
+                "default": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Steel-cut oats, boiled egg, unsweetened almond milk"
+                    ],
+                    [
+                        "Lunch",
+                        "Grilled chicken breast, lentils, spinach salad"
+                    ],
+                    [
+                        "Snack",
+                        "Cucumber sticks, unsweetened yogurt"
+                    ],
+                    [
+                        "Dinner",
+                        "Grilled fish, brown rice, steamed broccoli"
+                    ]
+                ],
+                "lactose": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Lactose-free oats with berries, chia pudding, green tea"
+                    ],
+                    [
+                        "Lunch",
+                        "Grilled tofu, quinoa, spinach salad with lemon vinaigrette"
+                    ],
+                    [
+                        "Snack",
+                        "Handful of almonds, banana"
+                    ],
+                    [
+                        "Dinner",
+                        "Lentil soup with brown rice, steamed broccoli"
+                    ]
+                ],
+                "anaphylaxis": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Boiled eggs, gluten-free toast (rice or corn-based), herbal tea"
+                    ],
+                    [
+                        "Lunch",
+                        "Steamed fish (e.g., cod or tilapia), mashed potatoes, green salad with olive oil"
+                    ],
+                    [
+                        "Snack",
+                        "Apple slices, plain rice crackers"
+                    ],
+                    [
+                        "Dinner",
+                        "Chicken stew with cooked carrots and millet"
+                    ]
+                ]
+            },
+            "Workout": [
+                {
+                    "Day": "Monday",
+                    "Activity": "20 min walk post-breakfast & post-dinner"
+                },
+                {
+                    "Day": "Tuesday",
+                    "Activity": "15 min resistance band exercises focusing on major muscle groups"
+                },
+                {
+                    "Day": "Wednesday",
+                    "Activity": "20 min brisk walk, light stretching (dynamic and static)"
+                },
+                {
+                    "Day": "Thursday",
+                    "Activity": "15 min resistance band exercises or bodyweight squats/lunges"
+                },
+                {
+                    "Day": "Friday",
+                    "Activity": "30 min leisure walk, focusing on breathing"
+                },
+                {
+                    "Day": "Saturday",
+                    "Activity": "Yoga or Pilates for flexibility and core strength (20-30 min)"
+                },
+                {
+                    "Day": "Sunday",
+                    "Activity": "Rest or light activity like gardening (30 min)"
+                }
+            ],
+            "Medications": {
+                "general": [
+                    "No medication needed currently, focus on lifestyle modifications.",
+                    "Maintain regular glucose testing annually or as advised by physician."
+                ],
+                "allergy": "Avoid OTC multivitamins or supplements that may contain hidden allergens like lactose, gluten, or soy. Always check ingredient labels carefully."
+            }
+        },
+        "Borderline": {
+            "Diet": {
+                "default": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oatmeal with berries (low glycemic fruits), 1 boiled egg"
+                    ],
+                    [
+                        "Lunch",
+                        "Lean protein (grilled chicken/fish), large mixed greens salad, small portion of quinoa"
+                    ],
+                    [
+                        "Snack",
+                        "Greek yogurt (unsweetened), small apple"
+                    ],
+                    [
+                        "Dinner",
+                        "Vegetable stir-fry with lean protein (tofu/chicken), brown rice"
+                    ]
+                ],
+                "lactose": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oatmeal with plant-based milk, chia seeds, berries"
+                    ],
+                    [
+                        "Lunch",
+                        "Lentil soup, whole-grain bread (lactose-free), side salad"
+                    ],
+                    [
+                        "Snack",
+                        "Rice cakes with avocado, cucumber slices"
+                    ],
+                    [
+                        "Dinner",
+                        "Baked salmon with roasted asparagus and sweet potato"
+                    ]
+                ],
+                "anaphylaxis": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Gluten-free cereal with safe milk substitute, banana"
+                    ],
+                    [
+                        "Lunch",
+                        "Turkey breast slices, boiled potatoes, steamed green beans"
+                    ],
+                    [
+                        "Snack",
+                        "Pear, plain rice crackers"
+                    ],
+                    [
+                        "Dinner",
+                        "Lamb stew with carrots and peas, quinoa"
+                    ]
+                ]
+            },
+            "Workout": [
+                {
+                    "Day": "Monday",
+                    "Activity": "30 min brisk walking, focus on maintaining pace"
+                },
+                {
+                    "Day": "Tuesday",
+                    "Activity": "20 min light resistance training (bodyweight exercises: squats, push-ups, planks)"
+                },
+                {
+                    "Day": "Wednesday",
+                    "Activity": "30 min cycling (moderate intensity) or elliptical"
+                },
+                {
+                    "Day": "Thursday",
+                    "Activity": "20 min moderate resistance training, proper form emphasis"
+                },
+                {
+                    "Day": "Friday",
+                    "Activity": "30 min walk or swim, focus on consistent effort"
+                },
+                {
+                    "Day": "Saturday",
+                    "Activity": "Yoga or stretching for 20-30 min, focusing on flexibility and balance"
+                },
+                {
+                    "Day": "Sunday",
+                    "Activity": "Active rest: light gardening, leisure walk (30-45 min)"
+                }
+            ],
+            "Medications": {
+                "general": [
+                    "Lifestyle modifications are primary focus.",
+                    "Consider Metformin only if A1C continues to rise despite diet/exercise.",
+                    "Monitor blood glucose levels 3 times a week."
+                ],
+                "allergy": "Discuss all existing allergies with your doctor before starting any new medication, even over-the-counter."
+            }
+        },
+        "Moderate": {
+            "Diet": {
+                "default": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Scrambled eggs with spinach, whole-wheat toast (small portion), black coffee"
+                    ],
+                    [
+                        "Lunch",
+                        "Baked chicken with large serving of non-starchy vegetables (broccoli, bell peppers)"
+                    ],
+                    [
+                        "Snack",
+                        "Cottage cheese (low-fat), few walnuts"
+                    ],
+                    [
+                        "Dinner",
+                        "Lentil and vegetable curry, small portion of brown rice"
+                    ]
+                ],
+                "lactose": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Tofu scramble with vegetables, gluten-free toast"
+                    ],
+                    [
+                        "Lunch",
+                        "Quinoa salad with chickpeas, cucumber, tomato, and olive oil dressing"
+                    ],
+                    [
+                        "Snack",
+                        "Lactose-free yogurt, small orange"
+                    ],
+                    [
+                        "Dinner",
+                        "Vegetable stir-fry with tempeh, small serving of wild rice"
+                    ]
+                ],
+                "anaphylaxis": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Boiled egg, plain rice porridge (made with water), safe fruit"
+                    ],
+                    [
+                        "Lunch",
+                        "Baked cod with boiled carrots and green beans"
+                    ],
+                    [
+                        "Snack",
+                        "Apple slices, plain rice cakes"
+                    ],
+                    [
+                        "Dinner",
+                        "Chicken and vegetable broth-based soup with rice noodles"
+                    ]
+                ]
+            },
+            "Workout": [
+                {
+                    "Day": "Monday",
+                    "Activity": "20 min walk after breakfast and dinner, focus on steady pace"
+                },
+                {
+                    "Day": "Tuesday",
+                    "Activity": "15 min light resistance band exercises, focus on upper body"
+                },
+                {
+                    "Day": "Wednesday",
+                    "Activity": "30 min moderate walking or stationary bike"
+                },
+                {
+                    "Day": "Thursday",
+                    "Activity": "15 min light resistance band exercises, focus on lower body"
+                },
+                {
+                    "Day": "Friday",
+                    "Activity": "20 min leisure walk, gentle stretching"
+                },
+                {
+                    "Day": "Saturday",
+                    "Activity": "Light stretching or seated exercises (20 min)"
+                },
+                {
+                    "Day": "Sunday",
+                    "Activity": "Rest or very light activity (e.g., household chores)"
+                }
+            ],
+            "Medications": {
+                "general": [
+                    "Metformin 500mg once daily, gradually increase as tolerated.",
+                    "Regular blood glucose monitoring: fasting, pre-meal, and 2-hour post-meal.",
+                    "HbA1c test every 3-6 months."
+                ],
+                "allergy": "Report any new symptoms (e.g., rash, swelling, difficulty breathing) immediately, as these could indicate an allergic reaction to medication. Keep an antihistamine handy if advised by doctor.",
+                "detailed_plan": [
+                {
+                    "Week": "1",
+                    "Treatment": [
+                        "Start Metformin 500mg after dinner to minimize GI upset.",
+                        "Strict dietary control: emphasis on whole foods, low glycemic index, portion control.",
+                        "Blood glucose log: record levels before breakfast and 2 hours after dinner daily."
+                    ]
+                },
+                {
+                    "Week": "2",
+                    "Treatment": [
+                        "Increase Metformin to 500mg twice daily (after breakfast and dinner), if tolerated.",
+                        "Monitor for gastrointestinal upset (nausea, diarrhea).",
+                        "Introduce walking 30 minutes per day, gradually increasing intensity."
+                    ]
+                },
+                {
+                    "Week": "3",
+                    "Treatment": [
+                        "Continue Metformin dosage as tolerated.",
+                        "Consider adding a sulfonylurea (e.g., Gliclazide) if glucose targets are not met, under medical supervision.",
+                        "Schedule HbA1c test and kidney function panel."
+                    ]
+                },
+                {
+                    "Week": "4",
+                    "Treatment": [
+                        "Review HbA1c and kidney function results with doctor.",
+                        "Adjust medication doses based on results; consider additional agents like SGLT2 inhibitors if needed.",
+                        "Continue consistent diet and exercise, monitor weight progress."
+                    ]
+                }
+            ]
+            }
+            
+        },
+        "High": {
+            "Diet": {
+                "default": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Steel-cut oats, boiled egg, unsweetened almond milk"
+                    ],
+                    [
+                        "Lunch",
+                        "Grilled chicken breast, lentils, spinach salad"
+                    ],
+                    [
+                        "Snack",
+                        "Cucumber sticks, unsweetened yogurt"
+                    ],
+                    [
+                        "Dinner",
+                        "Grilled fish, brown rice, steamed broccoli"
+                    ]
+                ],
+                "lactose": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oats in oat milk, boiled egg, handful of berries"
+                    ],
+                    [
+                        "Lunch",
+                        "Tofu stir-fry with mixed vegetables (broccoli, bell peppers), green beans, lentils"
+                    ],
+                    [
+                        "Snack",
+                        "Mixed nuts (almonds, walnuts), banana"
+                    ],
+                    [
+                        "Dinner",
+                        "Quinoa with chickpeas and roasted vegetables (zucchini, eggplant)"
+                    ]
+                ],
+                "anaphylaxis": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Boiled eggs, gluten-free toast (e.g., rice bread), green tea"
+                    ],
+                    [
+                        "Lunch",
+                        "Baked chicken breast, plain white rice, steamed mixed vegetables (carrots, peas)"
+                    ],
+                    [
+                        "Snack",
+                        "Apple slices, plain seed crackers"
+                    ],
+                    [
+                        "Dinner",
+                        "Steamed fish (e.g., basa), plain boiled potatoes, cooked carrots"
+                    ]
+                ]
+            },
+            "Workout": [
+                {
+                    "Day": "Monday",
+                    "Activity": "20 min walk post-breakfast & post-dinner, slow to moderate pace."
+                },
+                {
+                    "Day": "Tuesday",
+                    "Activity": "15 min walk + 10 min resistance band exercises (light weights/bands for arms and legs)."
+                },
+                {
+                    "Day": "Wednesday",
+                    "Activity": "20 min walk, light yoga for blood sugar control and stress reduction."
+                },
+                {
+                    "Day": "Thursday",
+                    "Activity": "Brisk walking 25 min + core activation exercises (e.g., gentle planks, bird-dog)."
+                },
+                {
+                    "Day": "Friday",
+                    "Activity": "Walk stairs 10 min (slow, controlled) + toe touches, side bends (seated or standing)."
+                },
+                {
+                    "Day": "Saturday",
+                    "Activity": "Stretching & flexibility routine (20 min), focus on large muscle groups."
+                },
+                {
+                    "Day": "Sunday",
+                    "Activity": "Rest or 20 min leisure walk with ample hydration and comfortable shoes."
+                }
+            ],
+            "Medications": {
+                "general": [
+                    "Metformin 500mg twice daily (commonly prescribed and cornerstone therapy).",
+                    "Monitor blood glucose before and after meals, and at bedtime.",
+                    "Monthly HbA1c checks to assess long-term glucose control.",
+                    "Regular visits with endocrinologist for dosage adjustments and new medication introduction."
+                ],
+                "allergy": "Ensure all medications are allergy-safe. Avoid sulfa-containing drugs (e.g., some sulfonylureas) if allergic to sulfa. Always inform your doctor and pharmacist of all known allergies.",
+                "detailed_plan": [
+                {
+                    "Week": "1",
+                    "Treatment": [
+                        "Start Metformin 500mg after dinner to reduce initial gastrointestinal side effects.",
+                        "Strict dietary control: adherence to no-sugar, low glycemic index foods, precise portion control.",
+                        "Blood glucose log: meticulously record levels before breakfast, before dinner, and 2 hours after meals."
+                    ]
+                },
+                {
+                    "Week": "2",
+                    "Treatment": [
+                        "Increase Metformin to 500mg twice daily (after breakfast and dinner), if tolerated well.",
+                        "Actively monitor for any GI upset (nausea, diarrhea, abdominal pain); report persistent issues.",
+                        "Incorporate walking 30 minutes per day, aiming for consistency and gradual increase in pace."
+                    ]
+                },
+                {
+                    "Week": "3",
+                    "Treatment": [
+                        "Continue Metformin at current dose. If glucose targets are still not met, discuss with doctor about adding a DPP-4 Inhibitor (e.g., Sitagliptin 50mg daily) or a GLP-1 Receptor Agonist (e.g., Liraglutide).",
+                        "Schedule HbA1c test and comprehensive metabolic panel (CMP) to check kidney and liver function."
+                    ]
+                },
+                {
+                    "Week": "4",
+                    "Treatment": [
+                        "Review HbA1c results and CMP with your healthcare provider.",
+                        "Adjust medication doses or consider adding an SGLT2 inhibitor (e.g., Empagliflozin) if blood glucose remains high, especially if there are cardiovascular or renal benefits to be gained.",
+                        "Regularly check kidney function, monitor weight progress, and discuss any new symptoms."
+                    ]
+                }
+            ]
+            }
+            
+        }
+    },
+    "Heart Disease": {
+        "Healthy": {
+            "Diet": {
+                "default": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oats, banana, skim milk"
+                    ],
+                    [
+                        "Lunch",
+                        "Grilled chicken wrap (whole wheat), leafy greens, fruit salad"
+                    ],
+                    [
+                        "Snack",
+                        "Handful of almonds, herbal tea"
+                    ],
+                    [
+                        "Dinner",
+                        "Baked salmon, quinoa, roasted mixed vegetables (broccoli, bell peppers, zucchini)"
+                    ]
+                ],
+                "lactose": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oatmeal with plant milk (almond/soy/oat), boiled egg"
+                    ],
+                    [
+                        "Lunch",
+                        "Lentil soup, brown rice, spinach salad with lemon dressing"
+                    ],
+                    [
+                        "Snack",
+                        "Coconut yogurt (plain), apple slices"
+                    ],
+                    [
+                        "Dinner",
+                        "Tofu stir fry with couscous and grilled peppers"
+                    ]
+                ],
+                "anaphylaxis": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Scrambled eggs, gluten-free bread (e.g., pure rice bread)"
+                    ],
+                    [
+                        "Lunch",
+                        "Baked chicken breast (skinless), mashed potatoes (made with water/safe broth), carrots"
+                    ],
+                    [
+                        "Snack",
+                        "Plain rice cakes, pear"
+                    ],
+                    [
+                        "Dinner",
+                        "Steamed white fish (e.g., cod), plain rice, green beans"
+                    ]
+                ]
+            },
+            "Workout": [
+                "30 minutes moderate-intensity walk daily (e.g., brisk enough to raise heart rate but still hold a conversation).",
+                "2-3 times per week strength training with light weights or resistance bands (focus on major muscle groups, 10-15 repetitions).",
+                "Avoid holding breath during exercise (Valsalva maneuver) to prevent spikes in blood pressure.",
+                "Include 5-10 minutes of warm-up and cool-down stretches for each session."
+            ],
+            "Medications": {
+                "general": [
+                    "No medications required currently, focus on maintaining healthy lifestyle.",
+                    "Maintain blood pressure and cholesterol through a balanced, heart-healthy diet and regular exercise.",
+                    "Annual physical check-up including lipid profile and blood pressure monitoring."
+                ],
+                "allergy": "Avoid NSAIDs (Non-Steroidal Anti-Inflammatory Drugs) if you have a history of allergic asthma or aspirin sensitivity, as they can exacerbate symptoms. Consult with your doctor for pain relief alternatives."
+            }
+        },
+        "Borderline": {
+            "Diet": {
+                "default": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oatmeal with flaxseed, berries, skim milk"
+                    ],
+                    [
+                        "Lunch",
+                        "Large salad with grilled fish (salmon/sardines), olive oil dressing"
+                    ],
+                    [
+                        "Snack",
+                        "Small handful of walnuts, green tea"
+                    ],
+                    [
+                        "Dinner",
+                        "Chicken breast (skinless), steamed broccoli, quinoa"
+                    ]
+                ],
+                "lactose": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oatmeal with almond milk, chia seeds, sliced banana"
+                    ],
+                    [
+                        "Lunch",
+                        "Vegetable and lentil soup, gluten-free bread"
+                    ],
+                    [
+                        "Snack",
+                        "Soy yogurt (plain), handful of sunflower seeds"
+                    ],
+                    [
+                        "Dinner",
+                        "Grilled eggplant, tomato, and zucchini with couscous"
+                    ]
+                ],
+                "anaphylaxis": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Boiled egg, rice cakes, herbal tea"
+                    ],
+                    [
+                        "Lunch",
+                        "Baked turkey, plain mashed potatoes (made with water), steamed carrots"
+                    ],
+                    [
+                        "Snack",
+                        "Apple slices, salt-free rice crackers"
+                    ],
+                    [
+                        "Dinner",
+                        "Steamed chicken, plain white rice, boiled green beans"
+                    ]
+                ]
+            },
+            "Workout": [
+                "30-40 minutes moderate-intensity cardiovascular exercise daily (e.g., brisk walking, swimming).",
+                "3 times per week strength training with light-to-moderate weights, focusing on controlled movements and higher repetitions (12-15 reps).",
+                "Incorporate mindfulness or light yoga for stress reduction and improved heart rate variability (20 minutes, 2x/week)."
+            ],
+            "Medications": {
+                "general": [
+                    "Lifestyle modifications are paramount.",
+                    "Consider low-dose aspirin (e.g., 81mg) if a doctor advises based on individual risk factors (e.g., high cholesterol, family history).",
+                    "Regular monitoring of blood pressure, cholesterol, and blood sugar levels (e.g., quarterly)."
+                ],
+                "allergy": "Always inform your healthcare provider about any allergies to medications (e.g., aspirin, ibuprofen) before new prescriptions. Anaphylaxis history requires careful consideration of all medications."
+            }
+        },
+        "Moderate": {
+            "Diet": {
+                "default": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oatmeal with flaxseed, berries, skim milk"
+                    ],
+                    [
+                        "Lunch",
+                        "Large salad with grilled fish (salmon/sardines), olive oil dressing"
+                    ],
+                    [
+                        "Snack",
+                        "Small handful of walnuts, green tea"
+                    ],
+                    [
+                        "Dinner",
+                        "Chicken breast (skinless), steamed broccoli, quinoa"
+                    ]
+                ],
+                "lactose": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oatmeal with almond milk, chia seeds, sliced banana"
+                    ],
+                    [
+                        "Lunch",
+                        "Vegetable and lentil soup, gluten-free bread"
+                    ],
+                    [
+                        "Snack",
+                        "Soy yogurt (plain), handful of sunflower seeds"
+                    ],
+                    [
+                        "Dinner",
+                        "Grilled eggplant, tomato, and zucchini with couscous"
+                    ]
+                ],
+                "anaphylaxis": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Boiled egg, rice cakes, herbal tea"
+                    ],
+                    [
+                        "Lunch",
+                        "Baked turkey, plain mashed potatoes (made with water), steamed carrots"
+                    ],
+                    [
+                        "Snack",
+                        "Apple slices, salt-free rice crackers"
+                    ],
+                    [
+                        "Dinner",
+                        "Steamed chicken, plain white rice, boiled green beans"
+                    ]
+                ]
+            },
+            "Workout": [
+                {
+                    "Day": "Monday",
+                    "Activity": "30 min moderate walking, broken into two 15-min sessions if needed."
+                },
+                {
+                    "Day": "Tuesday",
+                    "Activity": "20 min light circuit training (e.g., wall push-ups, chair squats, bicep curls with light weights)."
+                },
+                {
+                    "Day": "Wednesday",
+                    "Activity": "30 min cycling (stationary bike) at a comfortable pace."
+                },
+                {
+                    "Day": "Thursday",
+                    "Activity": "20 min light resistance training, focusing on controlled movements and breathing."
+                },
+                {
+                    "Day": "Friday",
+                    "Activity": "30 min walking or elliptical, maintaining a consistent heart rate zone."
+                },
+                {
+                    "Day": "Saturday",
+                    "Activity": "Gentle stretching and balance exercises (20-25 min)."
+                },
+                {
+                    "Day": "Sunday",
+                    "Activity": "Rest or light active recovery (e.g., 20 min leisurely stroll)."
+                }
+            ],
+            "Medications": {
+                "general": [
+                    "Individualized medication based on risk factors (e.g., blood pressure, cholesterol).",
+                    "Often includes a low-dose statin (e.g., Atorvastatin 10mg) for cholesterol management.",
+                    "May include a low-dose ACE inhibitor (e.g., Lisinopril 5mg) or ARB if blood pressure is consistently elevated.",
+                    "Regular monitoring of blood pressure (daily), lipid profile (every 6 months), and kidney function."
+                ],
+                "allergy": "If allergic to statins, discuss alternative lipid-lowering agents (e.g., ezetimibe, PCSK9 inhibitors) with your doctor. If ACE inhibitor causes cough, an ARB is usually a safe alternative.",
+                "detailed_plan": [
+                {
+                    "Week": "1",
+                    "Treatment": [
+                        "Start Atorvastatin 10mg nightly for cholesterol control.",
+                        "Monitor blood pressure twice daily (morning and evening) and record readings.",
+                        "Adhere strictly to a low-sodium, low-saturated fat diet."
+                    ]
+                },
+                {
+                    "Week": "2",
+                    "Treatment": [
+                        "Introduce Lisinopril 5mg once daily in the morning if blood pressure remains elevated.",
+                        "Continue Atorvastatin. Monitor for side effects (e.g., muscle pain from statin, dry cough from ACE inhibitor).",
+                        "Increase daily physical activity to 30 minutes of moderate-intensity exercise."
+                    ]
+                },
+                {
+                    "Week": "3",
+                    "Treatment": [
+                        "Continue all prescribed medications. Ensure adherence and address any side effects with your doctor.",
+                        "Schedule a follow-up appointment with your physician to review medication efficacy and tolerance.",
+                        "Blood tests: lipid panel, electrolytes, and kidney function tests."
+                    ]
+                },
+                {
+                    "Week": "4",
+                    "Treatment": [
+                        "Review lab results and adjust medication dosages as needed.",
+                        "Discuss potential for adding a low-dose aspirin (75mg) if cardiovascular risk assessment warrants it.",
+                        "Consider referral to a nutritionist for detailed dietary guidance."
+                    ]
+                }
+            ]
+            }
+            
+        },
+        "High": {
+            "Diet": {
+                "default": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oatmeal with flaxseed, boiled egg white, unsweetened almond milk"
+                    ],
+                    [
+                        "Lunch",
+                        "Grilled salmon, sweet potato (small portion), large kale salad with light dressing"
+                    ],
+                    [
+                        "Snack",
+                        "Carrot sticks, small portion of unsalted almonds"
+                    ],
+                    [
+                        "Dinner",
+                        "Steamed chicken breast (skinless), brown rice, steamed broccoli and green beans"
+                    ]
+                ],
+                "lactose": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Oats with oat milk, apple, sprinkle of cinnamon"
+                    ],
+                    [
+                        "Lunch",
+                        "Tofu salad with mixed greens, lentil stew (low sodium)"
+                    ],
+                    [
+                        "Snack",
+                        "Mixed seeds (chia, flax, pumpkin), banana"
+                    ],
+                    [
+                        "Dinner",
+                        "Grilled eggplant, quinoa, zucchini, and bell pepper medley"
+                    ]
+                ],
+                "anaphylaxis": [
+                    [
+                        "Meal",
+                        "Food Items"
+                    ],
+                    [
+                        "Breakfast",
+                        "Boiled egg, plain rice cakes, green tea"
+                    ],
+                    [
+                        "Lunch",
+                        "Baked chicken breast (plain), white rice, boiled spinach"
+                    ],
+                    [
+                        "Snack",
+                        "Apple slices, plain, salt-free crackers (e.g., rice crackers)"
+                    ],
+                    [
+                        "Dinner",
+                        "Steamed fish (e.g., flounder), plain mashed potato (made with water), cooked carrots"
+                    ]
+                ]
+            },
+            "Workout": [
+                {
+                    "Day": "Monday",
+                    "Activity": "10 min walk after every meal (3x/day), light stretching for 5 min."
+                },
+                {
+                    "Day": "Tuesday",
+                    "Activity": "15 min walk post-lunch, 10 min gentle yoga focusing on breathing and relaxation."
+                },
+                {
+                    "Day": "Wednesday",
+                    "Activity": "10 min walk 2x/day, guided deep breathing exercises (5-10 min) for stress management."
+                },
+                {
+                    "Day": "Thursday",
+                    "Activity": "20 min physiotherapist-guided cardiac rehab exercises, focusing on low-impact movements."
+                },
+                {
+                    "Day": "Friday",
+                    "Activity": "15 min walk + arm/leg lifts (seated or supported standing, slow and controlled)."
+                },
+                {
+                    "Day": "Saturday",
+                    "Activity": "10 min stair climbing (slow pace, holding handrail), gentle yoga or stretching for 15 min."
+                },
+                {
+                    "Day": "Sunday",
+                    "Activity": "Rest day or 15 min leisure walk at a very comfortable pace, ensuring good hydration."
+                }
+            ],
+            "Medications": {
+                "general": [
+                    "Beta-blockers (e.g., Metoprolol) for heart rate control, blood pressure, and rhythm management.",
+                    "Statins for aggressive cholesterol reduction (high-intensity statin like Atorvastatin 40-80mg or Rosuvastatin 20-40mg).",
+                    "ACE inhibitors (e.g., Lisinopril) or ARBs (e.g., Valsartan) if ejection fraction is < 50% or for blood pressure control.",
+                    "Diuretics (e.g., Furosemide) for fluid retention, if present.",
+                    "Aspirin (low-dose, 75-100mg daily) for antiplatelet effect, unless contraindicated."
+                ],
+                "allergy": "If an ACE inhibitor causes a persistent dry cough, ask your doctor for an alternative medication from the ARB class (e.g., Valsartan, Losartan) which has a similar effect without the cough. Be vigilant for any signs of allergic reactions to new medications and report them immediately.",
+                "detailed_plan": [
+                {
+                    "Week": "1",
+                    "Treatment": [
+                        "Start Beta-blocker (Metoprolol Succinate ER 25mg daily) for heart rate and BP control.",
+                        "Start high-intensity Statin (Atorvastatin 40mg nightly) for cholesterol reduction.",
+                        "Low-dose Aspirin 75mg daily (if advised by doctor based on risk-benefit).",
+                        "Monitor blood pressure and heart rate twice daily and keep a detailed record."
+                    ]
+                },
+                {
+                    "Week": "2",
+                    "Treatment": [
+                        "Increase Beta-blocker dose (Metoprolol 50mg daily) if tolerated and BP/HR targets not met.",
+                        "Add ACE Inhibitor (Enalapril 2.5mg morning) if blood pressure remains high or for heart failure indication.",
+                        "Continue Statin and Aspirin. Monitor for signs of hypotension or excessive bradycardia.",
+                        "Schedule blood tests for electrolytes (potassium, sodium), kidney function (creatinine, BUN), and liver enzymes."
+                    ]
+                },
+                {
+                    "Week": "3",
+                    "Treatment": [
+                        "Continue all current medications. If fluid retention is present, a loop diuretic (e.g., Furosemide 20mg daily) might be initiated.",
+                        "Regularly monitor ECG response to therapy if symptoms persist or worsen.",
+                        "Weekly weight check for fluid retention, strict adherence to sodium-restricted diet."
+                    ]
+                },
+                {
+                    "Week": "4",
+                    "Treatment": [
+                        "Adjust Enalapril or Metoprolol dose if blood pressure is too low or symptoms persist. If cough develops with ACEI, switch to ARB.",
+                        "Consider referral to a specialized cardiologist for advanced management or further diagnostic tests.",
+                        "If stable, consider a supervised treadmill stress test to assess cardiac function under exertion.",
+                        "Follow-up lab work: Lipid profile, repeat ECG, and follow-up consultation with cardiologist."
+                    ]
+                }
+            ]
+            }
+            
+        }
+    }
+}

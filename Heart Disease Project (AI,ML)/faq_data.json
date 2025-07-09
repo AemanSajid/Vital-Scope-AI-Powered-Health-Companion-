@@ -1,0 +1,1087 @@
+{
+  "hi": {
+    "answer": "Hello! How can I assist you with your health queries today?",
+    "related": [],
+    "category": "greeting"
+  },
+  "aoa": {
+    "answer": "Assalam-o-Alaikum! How can I help you today regarding health information?",
+    "related": [],
+    "category": "greeting"
+  },
+  "unanswerable_general": {
+    "answer": "I'm sorry, I don't have a direct answer to that specific question. For further queries, please email us at: ammasajid@gmail.com",
+    "related": [],
+    "category": "fallback"
+  },
+  "unanswerable_medical": {
+    "answer": "I'm sorry, I don't have a direct answer to that specific question regarding heart disease or diabetes. For more specialized information, please email us at: info@islamabadspecialistsclinic.com",
+    "related": [],
+    "category": "fallback"
+  },
+  
+  "why did we choose heart and diabetes for project": {
+    "answer": "We chose heart disease and diabetes because they are among the most common and life-threatening chronic illnesses. Early prediction can help in prevention and management, making AI-powered health apps crucial in public health.",
+    "related": ["what is heart disease", "what is diabetes", "how does prediction help"],
+    "category": "project"
+  },
+  "what is logistic regression": {
+    "answer": "Logistic regression is a machine learning algorithm used for binary classification problems. It predicts the probability of an outcome that can only have two values, such as disease or no disease.",
+    "related": ["how is logistic regression used in our project", "what is sigmoid function"],
+    "category": "ml"
+  },
+  "how is logistic regression used in our project": {
+    "answer": "We used logistic regression to predict if a person is at low, moderate, or high risk of heart disease or diabetes based on input features such as age, glucose level, BMI, etc.",
+    "related": ["attributes used in forms", "logistic regression steps"],
+    "category": "ml"
+  },
+  "what is sigmoid function and how is it used": {
+    "answer": "The sigmoid function is used in logistic regression to convert the output into a probability value between 0 and 1. This helps in deciding the final classification.",
+    "related": ["logistic regression", "how accuracy is used"],
+    "category": "ml"
+  },
+  "what attributes are used in forms": {
+    "answer": "Attributes include age, gender, chest pain type, glucose, cholesterol, BMI, physical activity level, and other relevant medical indicators.",
+    "related": ["how can a person get these values", "form field explanations"],
+    "category": "form"
+  },
+  "how can a person get all these values to fill forms": {
+    "answer": "Most values can be obtained from routine blood tests and medical check-ups. Age and gender are self-known, while others like cholesterol and glucose need lab tests.",
+    "related": ["attributes used in forms", "form field explanations"],
+    "category": "form"
+  },
+  "form field explanations": {
+    "answer": "Each form field represents a medical or demographic indicator. For example, 'age' is the person's age in years, 'glucose' is fasting blood glucose, 'cholesterol' is total blood cholesterol, etc.",
+    "related": ["how can a person get these values", "attributes used in forms"],
+    "category": "form"
+  },
+  "what is fuzzy wuzzy": {
+    "answer": "FuzzyWuzzy is a Python library used for fuzzy string matching. It helps us compare user questions with predefined FAQs even if they are phrased slightly differently.",
+    "related": ["why did we use fuzzy wuzzy", "chatbot logic"],
+    "category": "tools"
+  },
+  "what is CORS": {
+    "answer": "CORS (Cross-Origin Resource Sharing) is a security feature that allows resources from one domain to be accessed by another domain. We used Flask-CORS to enable our Streamlit frontend to communicate with the Flask backend.",
+    "related": ["why did we use flask and streamlit"],
+    "category": "tools"
+  },
+  "why did we use flask and streamlit": {
+    "answer": "Flask is used for creating the backend REST API to serve the ML model, while Streamlit provides a simple UI for user interaction. Together, they make the app both powerful and easy to use.",
+    "related": ["what is flask", "what is streamlit"],
+    "category": "project"
+  },
+  "where is our dataset from": {
+    "answer": "We used publicly available datasets from sources like Kaggle and UCI Machine Learning Repository for both heart disease and diabetes prediction.",
+    "related": ["attributes used in forms"],
+    "category": "project"
+  },
+  "what is pandas": {
+    "answer": "Pandas is a Python library for data analysis and manipulation. It was used to load, clean, and explore the dataset in our project.",
+    "related": ["data preprocessing", "what is sklearn.model_selection"],
+    "category": "tools"
+  },
+  "what is sklearn.model_selection": {
+    "answer": "This module provides utilities to split data into training and testing sets. We used train_test_split to train our model and evaluate its performance.",
+    "related": ["what is pandas", "logistic regression steps"],
+    "category": "tools"
+  },
+  "what is sklearn.linear_model": {
+    "answer": "It is a module in Scikit-learn that provides the LogisticRegression class used to train our model.",
+    "related": ["logistic regression", "logistic regression steps"],
+    "category": "tools"
+  },
+  "what is sklearn.metrics": {
+    "answer": "It provides functions to measure the accuracy, precision, recall, and other evaluation metrics for machine learning models.",
+    "related": ["how accuracy is used here", "confusion matrix"],
+    "category": "tools"
+  },
+  "how accuracy is used here": {
+    "answer": "Accuracy helps us measure how often our model correctly predicts the risk level. A high accuracy indicates that the model is making reliable predictions.",
+    "related": ["what is sklearn.metrics", "confusion matrix"],
+    "category": "ml"
+  },
+  "logistic regression steps": {
+    "answer": "1. Load dataset using pandas\n2. Clean data\n3. Split data using train_test_split\n4. Train model using LogisticRegression()\n5. Make predictions\n6. Evaluate model using accuracy_score and confusion_matrix",
+    "related": ["how is logistic regression used in our project", "what is sigmoid function"],
+    "category": "ml"
+  },
+  "what is confusion matrix": {
+    "answer": "A confusion matrix is a table used to evaluate the performance of a classification model. It shows the true positives, true negatives, false positives, and false negatives.",
+    "related": ["how accuracy is used here", "evaluation metrics"],
+    "category": "ml"
+  },
+  "what is age field in form": {
+    "answer": "Age represents the number of years the person has lived. It's a common risk factor for both diabetes and heart disease.",
+    "related": ["attributes used in forms"],
+    "category": "form"
+  },
+  "what is bmi field in form": {
+    "answer": "BMI (Body Mass Index) is calculated from a person's weight and height. It's used to indicate underweight, normal, overweight, or obesity levels.",
+    "related": ["how to calculate BMI", "attributes used in forms"],
+    "category": "form"
+  },
+  "how to calculate BMI": {
+    "answer": "BMI is calculated as weight (kg) divided by height (m) squared. For example, 70 / (1.75)^2 = 22.86",
+    "related": ["what is bmi field in form"],
+    "category": "form"
+  },
+  "what is gender field in form": {
+    "answer": "Gender is important because some diseases have different risk profiles for males and females. This is typically entered as 'male' or 'female'.",
+    "related": ["attributes used in forms"],
+    "category": "form"
+  },
+  "what is glucose field in form": {
+    "answer": "Glucose represents the level of sugar in the blood. High glucose can indicate diabetes or pre-diabetes.",
+    "related": ["how can a person get these values"],
+    "category": "form"
+  },
+  "what is cholesterol field in form": {
+    "answer": "Cholesterol levels indicate the amount of fat in the blood. High cholesterol increases the risk of heart disease.",
+    "related": ["attributes used in forms"],
+    "category": "form"
+  },
+  "what is heart disease": {
+    "answer": "Heart disease refers to several types of heart conditions, including blocked arteries, heart attacks, and more. It’s often caused by plaque buildup in arteries.",
+    "related": ["risk factors of heart disease", "why did we choose heart and diabetes for project"],
+    "category": "heart"
+  },
+  "what is diabetes": {
+    "answer": "Diabetes is a chronic disease that occurs when the pancreas does not produce enough insulin or the body cannot use it effectively, leading to high blood sugar levels.",
+    "related": ["risk factors of diabetes", "why did we choose heart and diabetes for project"],
+    "category": "diabetes"
+  },
+  "how does prediction help": {
+    "answer": "Prediction models help detect risk early, allowing people to seek timely medical advice and make lifestyle changes, potentially preventing severe illness.",
+    "related": ["how is logistic regression used in our project", "why did we choose heart and diabetes for project"],
+    "category": "project"
+  },
+  "what is a heart attack": {
+    "answer": "A heart attack (myocardial infarction) happens when blood flow to a part of the heart is severely reduced or blocked, usually by a blood clot. Without blood, heart muscle begins to die.",
+    "related": [
+      "what causes a heart attack",
+      "what are symptoms of a heart attack",
+      "what to do during a heart attack"
+    ],
+    "category": "heart"
+  },
+  "what are the symptoms of a heart attack": {
+    "answer": "Common symptoms include chest pain or discomfort (angina), shortness of breath, pain or discomfort in one or both arms (especially the left), jaw, neck, back, or stomach. Other symptoms can be nausea, lightheadedness, or breaking out in a cold sweat.",
+    "related": [
+      "signs of a heart attack in women",
+      "what is a silent heart attack",
+      "how to recognize a heart attack"
+    ],
+    "category": "heart"
+  },
+  "how can I prevent heart disease": {
+    "answer": "Preventing heart disease involves adopting a healthy lifestyle: eating a balanced diet rich in fruits and vegetables, regular physical activity, maintaining a healthy weight, avoiding smoking, limiting alcohol, and effectively managing conditions like high blood pressure, high cholesterol, and diabetes.",
+    "related": [
+      "how does diet affect heart health",
+      "importance of regular exercise",
+      "best foods for heart health"
+    ],
+    "category": "heart"
+  },
+  "what is high blood pressure": {
+    "answer": "High blood pressure, or hypertension, is a common condition where the long-term force of the blood against your artery walls is high enough that it may eventually cause health problems, such as heart disease. A normal blood pressure is typically less than 120/80 mmHg.",
+    "related": [
+      "how to reduce blood pressure",
+      "symptoms of high blood pressure",
+      "what are normal blood pressure readings"
+    ],
+    "category": "heart"
+  },
+  "what is cholesterol": {
+    "answer": "Cholesterol is a waxy, fat-like substance found in all your cells. Your body needs some cholesterol to make hormones, Vitamin D, and substances that help you digest foods. However, too much 'bad' cholesterol (LDL) can lead to plaque buildup in arteries, increasing heart disease risk.",
+    "related": [
+      "how to lower cholesterol",
+      "difference between HDL and LDL",
+      "what foods are high in cholesterol"
+    ],
+    "category": "heart"
+  },
+  "what is coronary artery disease": {
+    "answer": "Coronary artery disease (CAD) is a condition in which the major blood vessels that supply the heart (coronary arteries) become narrowed or blocked, usually due to the buildup of plaque (atherosclerosis). This reduces blood flow to the heart muscle.",
+    "related": [
+      "treatment for coronary artery disease",
+      "symptoms of coronary blockage",
+      "risk factors for CAD"
+    ],
+    "category": "heart"
+  },
+  "what is heart failure": {
+    "answer": "Heart failure, sometimes called congestive heart failure, means the heart isn't pumping as well as it should. It doesn't mean the heart has stopped working, but rather that it can't pump enough blood and oxygen to support other organs in the body.",
+    "related": [
+      "treatment for heart failure",
+      "is heart failure curable",
+      "symptoms of heart failure"
+    ],
+    "category": "heart"
+  },
+  "can stress cause heart problems": {
+    "answer": "Yes, chronic stress can significantly impact heart health. It can lead to higher blood pressure, increased heart rate, and can contribute to factors like unhealthy eating, physical inactivity, and smoking, all of which raise the risk of heart disease.",
+    "related": [
+      "how to manage stress for heart health",
+      "effects of stress on the heart",
+      "stress reduction techniques"
+    ],
+    "category": "heart"
+  },
+  "what is arrhythmia": {
+    "answer": "Arrhythmia is an irregular heartbeat, meaning your heart beats too fast, too slow, or with an irregular rhythm. While many arrhythmias are harmless, some can be serious and potentially life-threatening.",
+    "related": [
+      "types of arrhythmias",
+      "symptoms of arrhythmia",
+      "treatment for irregular heartbeat"
+    ],
+    "category": "heart"
+  },
+  "what are the risk factors for heart disease": {
+    "answer": "Major risk factors for heart disease include high blood pressure, high cholesterol, diabetes, smoking, obesity, physical inactivity, unhealthy diet, and a family history of heart disease.",
+    "related": [
+      "how to reduce heart disease risk",
+      "can genetics cause heart problems",
+      "modifiable vs non-modifiable risk factors"
+    ],
+    "category": "heart"
+  },
+  "what is angioplasty": {
+    "answer": "Angioplasty is a procedure used to widen narrowed or obstructed arteries or veins, typically to treat arterial atherosclerosis. A balloon-tipped catheter is inserted and inflated to open the vessel.",
+    "related": ["when is angioplasty needed", "risks of angioplasty", "stents in heart procedures"],
+    "category": "heart"
+  },
+  "what is bypass surgery": {
+    "answer": "Coronary artery bypass graft (CABG) surgery, commonly known as bypass surgery, is a procedure that improves blood flow to the heart. Surgeons use healthy blood vessels from another part of your body to bypass (go around) blocked or narrowed coronary arteries.",
+    "related": ["when is bypass surgery necessary", "recovery after bypass surgery", "alternatives to bypass surgery"],
+    "category": "heart"
+  },
+  "what is a stent": {
+    "answer": "A stent is a small, mesh-like tube that doctors can insert into a narrowed artery to keep it open. It helps improve blood flow and is often used after angioplasty to prevent the artery from narrowing again.",
+    "related": ["types of heart stents", "life with a heart stent", "risks of stent placement"],
+    "category": "heart"
+  },
+  "what is a stroke": {
+    "answer": "A stroke occurs when the blood supply to part of your brain is interrupted or severely reduced, depriving brain tissue of oxygen and nutrients. Brain cells begin to die within minutes. It's often linked to heart health issues.",
+    "related": ["types of stroke", "symptoms of stroke", "preventing stroke"],
+    "category": "heart"
+  },
+  "what is an echocardiogram": {
+    "answer": "An echocardiogram is a non-invasive test that uses sound waves to produce live images of your heart. It allows your doctor to see how your heart is beating and pumping blood, and to detect heart disease.",
+    "related": ["what does an echocardiogram show", "preparing for an echo", "types of heart imaging"],
+    "category": "heart"
+  },
+  "what is an ecg (ekg)": {
+    "answer": "An electrocardiogram (ECG or EKG) is a simple, painless test that records the electrical activity of your heart. It helps identify heart rhythm problems, diagnose heart attacks, and assess overall heart health.",
+    "related": ["how an ECG works", "what an ECG can detect", "is an ECG painful"],
+    "category": "heart"
+  },
+  "what is a stress test": {
+    "answer": "A stress test (or exercise test) monitors your heart's activity while you're physically active, usually on a treadmill or stationary bicycle. It helps determine if your heart is receiving enough blood flow and oxygen during exertion.",
+    "related": ["types of stress tests", "what to expect during a stress test", "preparing for a stress test"],
+    "category": "heart"
+  },
+  "what is metabolic syndrome": {
+    "answer": "Metabolic syndrome is a cluster of conditions that occur together, increasing your risk of heart disease, stroke, and type 2 diabetes. These conditions include increased blood pressure, high blood sugar, excess body fat around the waist, and abnormal cholesterol or triglyceride levels.",
+    "related": ["how to treat metabolic syndrome", "symptoms of metabolic syndrome", "preventing metabolic syndrome"],
+    "category": "heart"
+  },
+  "how does diet affect heart health": {
+    "answer": "Your diet plays a crucial role in heart health. Eating foods high in saturated and trans fats, cholesterol, sodium, and added sugars can increase your risk of heart disease, while a diet rich in fruits, vegetables, whole grains, and lean proteins promotes a healthy heart.",
+    "related": ["best foods for heart health", "worst foods for heart health", "mediterranean diet heart benefits"],
+    "category": "heart"
+  },
+  "what is a healthy heart diet": {
+    "answer": "A healthy heart diet emphasizes fruits, vegetables, whole grains, lean protein sources (fish, poultry, beans), and healthy fats (olive oil, avocados, nuts). It limits saturated and trans fats, cholesterol, sodium, and added sugars.",
+    "related": ["sample heart-healthy meal plan", "foods to avoid for heart health", "is red meat bad for heart"],
+    "category": "heart"
+  },
+  "how much exercise is good for heart": {
+    "answer": "For most healthy adults, the American Heart Association recommends at least 150 minutes per week of moderate-intensity aerobic activity or 75 minutes per week of vigorous aerobic activity, or a combination of both, spread throughout the week. Plus, muscle-strengthening activity at least 2 days per week.",
+    "related": ["best exercises for heart health", "can too much exercise harm heart", "exercise guidelines for beginners"],
+    "category": "heart"
+  },
+  "what is a heart murmur": {
+    "answer": "A heart murmur is a sound made by turbulent blood flow through the heart valves. While some are harmless (innocent murmurs), others can indicate an underlying heart problem, such as a leaky or narrowed heart valve.",
+    "related": ["types of heart murmurs", "symptoms of heart murmurs", "treating heart murmurs"],
+    "category": "heart"
+  },
+  "what is atrial fibrillation": {
+    "answer": "Atrial fibrillation (AFib) is a common type of arrhythmia where the upper chambers of the heart (atria) beat chaotically and irregularly, out of coordination with the lower chambers (ventricles). This can lead to blood clots, stroke, heart failure, and other heart-related complications.",
+    "related": ["symptoms of AFib", "treatment for AFib", "risks of atrial fibrillation"],
+    "category": "heart"
+  },
+  "what is a holter monitor": {
+    "answer": "A Holter monitor is a portable device that records your heart's electrical activity continuously for 24 to 48 hours, or sometimes even longer. It's used to detect heart rhythm problems that may not show up during a regular ECG.",
+    "related": ["when is a Holter monitor used", "how to wear a Holter monitor", "what does Holter monitor detect"],
+    "category": "heart"
+  },
+  "what is heart valve disease": {
+    "answer": "Heart valve disease occurs when one or more of the heart's four valves don't work correctly. This can happen if a valve is too narrow (stenosis), leaks (regurgitation), or prolapses.",
+    "related": ["types of heart valve disease", "symptoms of valve disease", "treatment for heart valve issues"],
+    "category": "heart"
+  },
+  "what is cardiomyopathy": {
+    "answer": "Cardiomyopathy is a disease of the heart muscle that makes it harder for your heart to pump blood to the rest of your body. It can lead to heart failure and other complications.",
+    "related": ["types of cardiomyopathy", "causes of cardiomyopathy", "living with cardiomyopathy"],
+    "category": "heart"
+  },
+  "what is peripheral artery disease": {
+    "answer": "Peripheral artery disease (PAD) is a common circulatory problem in which narrowed arteries reduce blood flow to your limbs. When you develop PAD, your extremities — usually your legs — don't receive enough blood flow to keep up with demand.",
+    "related": ["symptoms of PAD", "risk factors for PAD", "treating peripheral artery disease"],
+    "category": "heart"
+  },
+  "what is an aneurysm": {
+    "answer": "An aneurysm is a bulge or ballooning in the wall of an artery. Aneurysms can occur in any artery, but they are most common in the aorta (the main artery leaving the heart) or in arteries in the brain.",
+    "related": ["types of aneurysms", "symptoms of an aneurysm", "ruptured aneurysm risks"],
+    "category": "heart"
+  },
+  "what is endocarditis": {
+    "answer": "Endocarditis is an infection of the inner lining of your heart (endocardium) or heart valves. It typically occurs when bacteria or other germs from another part of your body spread through your bloodstream and attach to damaged areas in your heart.",
+    "related": ["causes of endocarditis", "symptoms of endocarditis", "treatment for endocarditis"],
+    "category": "heart"
+  },
+  "what is pericarditis": {
+    "answer": "Pericarditis is an inflammation of the pericardium, the two thin layers of tissue that surround your heart, holding it in place and helping it work. It can cause sharp chest pain.",
+    "related": ["causes of pericarditis", "symptoms of pericarditis", "treating pericarditis"],
+    "category": "heart"
+  },
+  "how to lower triglycerides": {
+    "answer": "To lower triglycerides, focus on reducing sugar and refined carbohydrates, consuming healthy fats (omega-3s), limiting alcohol, exercising regularly, and maintaining a healthy weight.",
+    "related": ["foods to lower triglycerides", "triglyceride levels explained", "medications for high triglycerides"],
+    "category": "heart"
+  },
+  "what is a healthy heart rate": {
+    "answer": "A normal resting heart rate for adults ranges from 60 to 100 beats per minute. A lower resting heart rate usually implies more efficient heart function and better cardiovascular fitness.",
+    "related": ["how to measure heart rate", "what affects heart rate", "when is a fast heart rate concerning"],
+    "category": "heart"
+  },
+  "what is a good cholesterol level": {
+    "answer": "Ideally, your total cholesterol should be less than 200 mg/dL, with LDL ('bad') cholesterol less than 100 mg/dL, and HDL ('good') cholesterol 60 mg/dL or higher. Triglycerides should be less than 150 mg/dL.",
+    "related": ["how to improve cholesterol ratio", "foods to raise HDL", "cholesterol medications"],
+    "category": "heart"
+  },
+  "how does smoking affect the heart": {
+    "answer": "Smoking severely damages the heart and blood vessels. It raises blood pressure, increases heart rate, makes blood more likely to clot, damages artery walls, and reduces oxygen delivery to the heart, significantly increasing the risk of heart attack and stroke.",
+    "related": ["benefits of quitting smoking heart", "vaping and heart health", "nicotine effects on heart"],
+    "category": "heart"
+  },
+  "how does alcohol affect the heart": {
+    "answer": "Excessive alcohol consumption can lead to high blood pressure, cardiomyopathy, arrhythmias (like AFib), and stroke. Moderate alcohol consumption, if any, is generally recommended for heart health.",
+    "related": ["moderate alcohol consumption guidelines", "alcohol and blood pressure", "alcohol and atrial fibrillation"],
+    "category": "heart"
+  },
+  "what are statins": {
+    "answer": "Statins are a class of drugs frequently prescribed to help lower cholesterol levels in the blood. They work by blocking a substance your liver needs to make cholesterol, thereby reducing LDL ('bad') cholesterol.",
+    "related": ["side effects of statins", "when are statins prescribed", "how do statins work"],
+    "category": "heart"
+  },
+  "what is a heart-healthy lifestyle": {
+    "answer": "A heart-healthy lifestyle involves a balanced diet, regular physical activity, maintaining a healthy weight, avoiding smoking, managing stress, getting enough sleep, and regular health check-ups to monitor blood pressure, cholesterol, and blood sugar.",
+    "related": ["daily habits for a healthy heart", "heart disease prevention tips", "benefits of healthy lifestyle heart"],
+    "category": "heart"
+  },
+  "can anxiety cause heart palpitations": {
+    "answer": "Yes, anxiety can definitely cause heart palpitations. When you're anxious, your body releases adrenaline, which can make your heart beat faster or feel like it's fluttering or pounding.",
+    "related": ["difference between anxiety and heart attack", "how to calm heart palpitations", "anxiety chest pain vs heart attack"],
+    "category": "heart"
+  },
+  "what is congenital heart disease": {
+    "answer": "Congenital heart disease (CHD) refers to defects in the heart's structure that are present at birth. These defects can affect the heart's walls, valves, or blood vessels.",
+    "related": ["types of CHD", "symptoms of CHD in children", "treatment for congenital heart defects"],
+    "category": "heart"
+  },
+  "what is an ablation": {
+    "answer": "Cardiac ablation is a procedure that can correct heart rhythm problems (arrhythmias). It works by scarring or destroying tissue in your heart that's causing the irregular heartbeat.",
+    "related": ["when is ablation used", "risks of cardiac ablation", "ablation recovery"],
+    "category": "heart"
+  },
+  "what is cardiac arrest": {
+    "answer": "Cardiac arrest is the abrupt loss of heart function, breathing, and consciousness. It's caused by an electrical disturbance in the heart that disrupts its pumping action, stopping blood flow to the brain and other organs.",
+    "related": ["difference between heart attack and cardiac arrest", "what to do during cardiac arrest", "causes of sudden cardiac arrest"],
+    "category": "heart"
+  },
+  "what is congestive heart failure": {
+    "answer": "Congestive heart failure is a chronic progressive condition that affects the pumping power of your heart muscles. It's often used interchangeably with 'heart failure,' referring to the heart's inability to pump enough blood.",
+    "related": ["stages of congestive heart failure", "managing CHF", "diet for congestive heart failure"],
+    "category": "heart"
+  },
+  "what is a pacemaker": {
+    "answer": "A pacemaker is a small device placed under the skin in your chest to help control abnormal heart rhythms. It uses low-energy electrical pulses to prompt the heart to beat at a normal rate.",
+    "related": ["when is a pacemaker needed", "living with a pacemaker", "types of pacemakers"],
+    "category": "heart"
+  },
+  "what are beta-blockers": {
+    "answer": "Beta-blockers are a class of medications that slow the heart rate and reduce blood pressure. They are commonly prescribed for conditions like high blood pressure, angina, and certain arrhythmias.",
+    "related": ["side effects of beta-blockers", "how do beta-blockers work", "who should not take beta-blockers"],
+    "category": "heart"
+  },
+  "what are ace inhibitors": {
+    "answer": "ACE (Angiotensin-Converting Enzyme) inhibitors are medications that help relax blood vessels and lower blood pressure. They are widely used to treat high blood pressure, heart failure, and prevent kidney damage in people with diabetes.",
+    "related": ["side effects of ACE inhibitors", "how ACE inhibitors work", "benefits of ACE inhibitors"],
+    "category": "heart"
+  },
+  "what is a heart-healthy diet for high blood pressure": {
+    "answer": "For high blood pressure, a heart-healthy diet emphasizes reducing sodium intake, increasing potassium, and incorporating foods rich in whole grains, fruits, vegetables, and lean proteins. The DASH diet (Dietary Approaches to Stop Hypertension) is often recommended.",
+    "related": ["DASH diet plan", "foods to avoid for high blood pressure", "natural ways to lower blood pressure"],
+    "category": "heart"
+  },
+  "what is primary prevention of heart disease": {
+    "answer": "Primary prevention of heart disease focuses on preventing the disease from occurring in individuals who are at risk. This involves promoting healthy lifestyle choices and managing risk factors like high blood pressure and cholesterol before they lead to heart issues.",
+    "related": ["examples of primary prevention heart", "importance of early intervention heart", "cardiovascular health screening"],
+    "category": "heart"
+  },
+  "what is secondary prevention of heart disease": {
+    "answer": "Secondary prevention aims to prevent a recurrent event or worsening of heart disease in individuals who have already been diagnosed with a heart condition. This includes medication, lifestyle changes, and procedures.",
+    "related": ["examples of secondary prevention heart", "rehabilitation after heart attack", "managing existing heart conditions"],
+    "category": "heart"
+  },
+  "can sleep apnea affect heart health": {
+    "answer": "Yes, sleep apnea can significantly affect heart health. It can lead to higher blood pressure, increased risk of heart attack, stroke, and arrhythmias due to repeated drops in blood oxygen levels during sleep.",
+    "related": ["symptoms of sleep apnea", "treating sleep apnea", "sleep disorders and heart disease"],
+    "category": "heart"
+  },
+  "what is a cardiac catheterization": {
+    "answer": "Cardiac catheterization is a procedure used to diagnose and treat certain heart conditions. A long, thin tube (catheter) is inserted into an artery or vein in your groin, neck or arm and threaded to your heart.",
+    "related": ["what happens during cardiac catheterization", "risks of cardiac cath", "diagnostic vs interventional cath"],
+    "category": "heart"
+  },
+  "what is hypertrophic cardiomyopathy": {
+    "answer": "Hypertrophic cardiomyopathy (HCM) is a disease in which the heart muscle becomes abnormally thick (hypertrophied). The thickened heart muscle can make it harder for the heart to pump blood.",
+    "related": ["symptoms of HCM", "causes of HCM", "managing hypertrophic cardiomyopathy"],
+    "category": "heart"
+  },
+  "what is dilated cardiomyopathy": {
+    "answer": "Dilated cardiomyopathy (DCM) is a condition in which the heart's main pumping chamber (left ventricle) becomes stretched and thinned (dilated), making it harder for the heart to pump blood effectively.",
+    "related": ["causes of DCM", "symptoms of DCM", "treatment for dilated cardiomyopathy"],
+    "category": "heart"
+  },
+  "what is restrictive cardiomyopathy": {
+    "answer": "Restrictive cardiomyopathy is a type of cardiomyopathy where the walls of the heart's lower chambers (ventricles) become rigid and less flexible. This stiffness prevents the ventricles from filling properly with blood between heartbeats.",
+    "related": ["causes of restrictive cardiomyopathy", "symptoms of restrictive cardiomyopathy", "treatment options for restrictive cardiomyopathy"],
+    "category": "heart"
+  },
+  "what is a heart scan": {
+    "answer": "A heart scan, often referring to a coronary artery calcium (CAC) scan, is a non-invasive CT scan that measures the amount of calcium in your coronary arteries. Calcium indicates the presence of plaque, which can lead to heart disease.",
+    "related": ["who needs a heart scan", "interpreting heart scan results", "benefits of a CAC scan"],
+    "category": "heart"
+  },
+  "what is orthostatic hypotension": {
+    "answer": "Orthostatic hypotension is a form of low blood pressure that happens when you stand up from sitting or lying down. You might feel dizzy, lightheaded, or even faint.",
+    "related": ["causes of orthostatic hypotension", "symptoms of orthostatic hypotension", "how to manage orthostatic hypotension"],
+    "category": "heart"
+  },
+  "what is a cardiovascular surgeon": {
+    "answer": "A cardiovascular surgeon is a medical doctor who specializes in surgical procedures on the heart, lungs, and blood vessels.",
+    "related": ["when to see a cardiac surgeon", "cardiovascular surgeon vs cardiologist", "types of heart surgeries"],
+    "category": "heart"
+  },
+  "what is a cardiologist": {
+    "answer": "A cardiologist is a doctor who specializes in diagnosing and treating diseases or conditions of the heart and blood vessels.",
+    "related": ["when to see a cardiologist", "what does a cardiologist do", "cardiologist vs heart surgeon"],
+    "category": "heart"
+  },
+  "what is a cardiac rehabilitation": {
+    "answer": "Cardiac rehabilitation is a medically supervised program designed to improve the health and well-being of people who have heart problems. It involves exercise counseling and training, education, and stress reduction.",
+    "related": ["benefits of cardiac rehab", "who qualifies for cardiac rehab", "what happens in cardiac rehab"],
+    "category": "heart"
+  },
+  "what is prehypertension": {
+    "answer": "Prehypertension is when your blood pressure is consistently higher than normal but not yet high enough to be classified as hypertension (high blood pressure). It's a warning sign that you're at risk of developing high blood pressure.",
+    "related": ["managing prehypertension", "normal blood pressure vs prehypertension", "preventing hypertension"],
+    "category": "heart"
+  },
+  "what is hypertension crisis": {
+    "answer": "A hypertensive crisis is a severe increase in blood pressure that can lead to a stroke or other serious health problems. It's a medical emergency that requires immediate medical attention.",
+    "related": ["symptoms of hypertensive crisis", "what causes hypertensive crisis", "treating blood pressure emergency"],
+    "category": "heart"
+  },
+  "how to check blood pressure at home": {
+    "answer": "To check blood pressure at home, use an accurate blood pressure monitor with a cuff that fits your arm. Sit calmly for 5 minutes with your feet flat on the floor, arm supported at heart level. Take two or three readings a minute apart.",
+    "related": ["best home blood pressure monitors", "tips for accurate BP readings", "when to measure blood pressure"],
+    "category": "heart"
+  },
+  "what is a cardiac diet": {
+    "answer": "A cardiac diet generally refers to a diet designed to promote heart health. It's low in saturated and trans fats, cholesterol, and sodium, and rich in fruits, vegetables, whole grains, and lean proteins.",
+    "related": ["sample cardiac diet menu", "foods to limit on a cardiac diet", "benefits of a cardiac diet"],
+    "category": "heart"
+  },
+  "what are symptoms of heart attack in women": {
+    "answer": "Women may experience heart attack symptoms differently than men. While chest pain is common, women are more likely to have shortness of breath, nausea/vomiting, back or jaw pain, dizziness, or unusual fatigue.",
+    "related": ["female heart attack symptoms", "silent heart attack symptoms women", "why are women's symptoms different"],
+    "category": "heart"
+  },
+  "can gerd cause chest pain like heart attack": {
+    "answer": "Yes, Gastroesophageal Reflux Disease (GERD) can cause chest pain that mimics heart attack symptoms. The burning sensation from acid reflux can sometimes radiate to the chest, making it difficult to distinguish without medical evaluation.",
+    "related": ["GERD symptoms vs heart attack", "how to tell if chest pain is GERD or heart", "when to seek medical help for chest pain"],
+    "category": "heart"
+  },
+  "what is cpr": {
+    "answer": "CPR (Cardiopulmonary Resuscitation) is a life-saving technique useful in many emergencies, including a heart attack or near drowning, in which someone's breathing or heartbeat has stopped. It involves chest compressions and rescue breaths.",
+    "related": ["how to perform CPR", "when to use CPR", "CPR training courses"],
+    "category": "heart"
+  },
+  "what is sudden cardiac death": {
+    "answer": "Sudden cardiac death (SCD) is a sudden, unexpected death caused by a loss of heart function (sudden cardiac arrest). It's often due to an electrical problem in the heart that leads to a fatal arrhythmia.",
+    "related": ["causes of SCD", "preventing sudden cardiac death", "risk factors for SCD"],
+    "category": "heart"
+  },
+  "what is a murmur of the heart": {
+    "answer": "A murmur of the heart is an unusual sound heard during a heartbeat, typically when blood flows through the heart valves. It can be a whooshing or swishing sound.",
+    "related": ["innocent heart murmur", "pathological heart murmur", "how murmurs are diagnosed"],
+    "category": "heart"
+  },
+  "what is a pacemaker implant": {
+    "answer": "A pacemaker implant is a surgical procedure to place a small device under the skin, usually in the chest, to help regulate abnormal heart rhythms. The pacemaker sends electrical pulses to the heart to ensure it beats regularly.",
+    "related": ["pacemaker surgery risks", "recovery after pacemaker implant", "when is a pacemaker implant necessary"],
+    "category": "heart"
+  },
+  "what is a defibrillator": {
+    "answer": "A defibrillator is a device that delivers an electric shock to the heart to restore a normal rhythm in cases of life-threatening arrhythmias, such as ventricular fibrillation. Automated External Defibrillators (AEDs) are common in public places.",
+    "related": ["how AEDs work", "when to use a defibrillator", "implantable cardioverter defibrillator (ICD)"],
+    "category": "heart"
+  },
+  "how to keep your heart healthy": {
+    "answer": "To keep your heart healthy, prioritize a balanced diet, engage in regular physical activity, maintain a healthy weight, quit smoking, manage stress, get enough sleep, and regularly monitor blood pressure, cholesterol, and blood sugar.",
+    "related": ["daily routine for heart health", "long-term heart health strategies", "natural ways to boost heart health"],
+    "category": "heart"
+  },
+  "what are common heart medications": {
+    "answer": "Common heart medications include statins (for cholesterol), ACE inhibitors and ARBs (for blood pressure and heart failure), beta-blockers (for heart rate and blood pressure), diuretics (for fluid retention), and antiplatelet agents (like aspirin) or anticoagulants (blood thinners) to prevent clots.",
+    "related": ["medication for high blood pressure", "cholesterol-lowering drugs", "blood thinners explained"],
+    "category": "heart"
+  },
+  "what is a normal blood pressure reading": {
+    "answer": "A normal blood pressure reading is generally considered to be less than 120/80 mmHg (millimeters of mercury). The top number (systolic) measures pressure when your heart beats, and the bottom number (diastolic) measures pressure between beats.",
+    "related": ["understanding blood pressure numbers", "what causes high blood pressure", "how often to check BP"],
+    "category": "heart"
+  },
+  "can dehydration affect heart rate": {
+    "answer": "Yes, dehydration can increase your heart rate and make your heart work harder. When you're dehydrated, your blood volume decreases, which means your heart needs to pump faster to deliver enough oxygen and nutrients throughout your body.",
+    "related": ["symptoms of dehydration", "how much water to drink for heart health", "dehydration and arrhythmias"],
+    "category": "heart"
+  },
+  "what is a cardiovascular disease": {
+    "answer": "Cardiovascular disease (CVD) is a general term for conditions that affect the heart or blood vessels. It includes coronary artery disease, stroke, heart failure, and high blood pressure, among others.",
+    "related": ["types of CVD", "prevention of CVD", "global impact of CVD"],
+    "category": "heart"
+  },
+  "what is the difference between heart attack and cardiac arrest": {
+    "answer": "A **heart attack** is a 'circulation' problem where blood flow to the heart is blocked. A person is usually awake. **Cardiac arrest** is an 'electrical' problem where the heart suddenly stops beating effectively, causing immediate unconsciousness. A heart attack can *lead* to cardiac arrest.",
+    "related": ["what causes cardiac arrest", "symptoms heart attack vs cardiac arrest", "first aid for heart attack and cardiac arrest"],
+    "category": "heart"
+  },
+  "what is the role of genetics in heart disease": {
+    "answer": "Genetics can play a significant role in heart disease risk. If close family members had heart disease at a young age, your risk might be higher. However, lifestyle choices can often mitigate genetic predispositions.",
+    "related": ["family history heart disease", "genetic testing for heart conditions", "can you prevent inherited heart disease"],
+    "category": "heart"
+  },
+  "what is a healthy diet for heart disease patients": {
+    "answer": "A diet for heart disease patients emphasizes lean proteins, fruits, vegetables, and whole grains, while severely limiting saturated and trans fats, cholesterol, and sodium. It's often personalized by a dietitian.",
+    "related": ["meal plan for heart patients", "foods to avoid with heart disease", "dietary changes after heart attack"],
+    "category": "heart"
+  },
+  "can a virus cause heart problems": {
+    "answer": "Yes, certain viral infections can lead to heart problems like myocarditis (inflammation of the heart muscle), which can sometimes lead to heart failure or arrhythmias.",
+    "related": ["viruses that affect the heart", "myocarditis symptoms", "post-viral fatigue and heart"],
+    "category": "heart"
+  },
+  "what is an echocardiogram used for": {
+    "answer": "An echocardiogram is used to diagnose various heart conditions by providing images of the heart's size, shape, and pumping ability. It can detect valve problems, congenital heart defects, and assess overall heart function.",
+    "related": ["types of echo tests", "preparing for an echocardiogram", "what an echo can reveal"],
+    "category": "heart"
+  },
+  "what is a nuclear stress test": {
+    "answer": "A nuclear stress test uses a small amount of radioactive tracer and an imaging camera to create pictures of blood flow to your heart muscle, both at rest and during stress. It helps identify areas of poor blood flow.",
+    "related": ["how nuclear stress test works", "preparing for nuclear stress test", "risks of nuclear stress test"],
+    "category": "heart"
+  },
+  "what are heart healthy snacks": {
+    "answer": "Heart-healthy snacks include fresh fruits, vegetables (like carrots and celery with hummus), a handful of nuts or seeds, Greek yogurt, whole-grain crackers with avocado, or a small portion of air-popped popcorn.",
+    "related": ["snack ideas for high cholesterol", "healthy snacks for blood pressure", "easy heart-healthy snacks"],
+    "category": "heart"
+  },
+  "what is the ideal weight for heart health": {
+    "answer": "Maintaining a healthy weight, typically indicated by a Body Mass Index (BMI) between 18.5 and 24.9, is crucial for heart health. Obesity significantly increases the risk of heart disease, high blood pressure, and diabetes.",
+    "related": ["BMI and heart risk", "weight loss for heart health", "how to calculate BMI"],
+    "category": "heart"
+  },
+
+  "what is type 1 diabetes": {
+    "answer": "Type 1 diabetes is an autoimmune condition where your immune system mistakenly attacks and destroys the insulin-producing cells (beta cells) in the pancreas. This means your body produces very little or no insulin, requiring lifelong insulin therapy.",
+    "related": [
+      "how to manage type 1 diabetes",
+      "causes of type 1 diabetes",
+      "living with type 1 diabetes"
+    ],
+    "category": "diabetes"
+  },
+  "what is type 2 diabetes": {
+    "answer": "Type 2 diabetes is the most common form, where your body doesn't use insulin well (insulin resistance) or doesn't produce enough insulin to keep blood sugar levels normal. It often develops due to a combination of genetics and lifestyle factors like obesity and inactivity.",
+    "related": [
+      "treatment for type 2 diabetes",
+      "is type 2 diabetes reversible",
+      "risk factors for type 2 diabetes"
+    ],
+    "category": "diabetes"
+  },
+  "what are the symptoms of diabetes": {
+    "answer": "Common symptoms of diabetes include increased thirst, frequent urination, increased hunger, fatigue, blurred vision, slow-healing sores, and unexplained weight loss. Type 1 symptoms can appear suddenly, while Type 2 symptoms develop gradually.",
+    "related": [
+      "early signs of diabetes",
+      "can diabetes cause weight loss",
+      "when to get tested for diabetes"
+    ],
+    "category": "diabetes"
+  },
+  "how is diabetes diagnosed": {
+    "answer": "Diabetes is primarily diagnosed through blood tests that measure blood glucose levels. These include the Fasting Plasma Glucose (FPG) test, the Oral Glucose Tolerance Test (OGTT), and the A1C test, which provides an average blood sugar level over the past 2-3 months.",
+    "related": [
+      "normal blood sugar levels",
+      "A1C test explanation",
+      "diabetes screening guidelines"
+    ],
+    "category": "diabetes"
+  },
+  "how do you manage diabetes": {
+    "answer": "Managing diabetes typically involves a combination of strategies: healthy eating (often with a focus on low-glycemic foods), regular physical activity, medication (oral drugs or insulin injections), and consistent blood sugar monitoring. Education and support are also key.",
+    "related": [
+      "diabetic-friendly diet",
+      "importance of blood sugar control",
+      "diabetes medications explained"
+    ],
+    "category": "diabetes"
+  },
+  "can diabetes be cured": {
+    "answer": "Currently, there is no cure for Type 1 diabetes. For Type 2 diabetes, while not technically 'cured,' it can often be managed or even put into remission (reversed) through significant lifestyle changes like weight loss and dietary adjustments.",
+    "related": [
+      "how to reverse type 2 diabetes",
+      "long-term effects of diabetes",
+      "new treatments for diabetes"
+    ],
+    "category": "diabetes"
+  },
+  "what is insulin resistance": {
+    "answer": "Insulin resistance is a condition where your body's cells don't respond well to insulin. As a result, your pancreas produces more insulin to compensate, leading to high insulin levels in the blood. Over time, the pancreas may not be able to keep up, leading to high blood sugar and eventually Type 2 diabetes.",
+    "related": [
+      "causes of insulin resistance",
+      "how to improve insulin sensitivity",
+      "symptoms of insulin resistance"
+    ],
+    "category": "diabetes"
+  },
+  "can children get diabetes": {
+    "answer": "Yes, children can develop both Type 1 and Type 2 diabetes. Type 1 is more common in children, but Type 2 diabetes in children and adolescents is increasing due to rising rates of childhood obesity.",
+    "related": [
+      "signs of diabetes in children",
+      "managing diabetes in kids",
+      "preventing type 2 diabetes in children"
+    ],
+    "category": "diabetes"
+  },
+  "what are diabetic complications": {
+    "answer": "If left unmanaged, diabetes can lead to severe long-term complications affecting various organs. These include heart disease, kidney disease (nephropathy), nerve damage (neuropathy), vision loss (retinopathy), foot problems, and increased risk of stroke.",
+    "related": [
+      "how to prevent diabetes complications",
+      "long-term effects of diabetes",
+      "diabetic retinopathy explained"
+    ],
+    "category": "diabetes"
+  },
+  "what is gestational diabetes": {
+    "answer": "Gestational diabetes is a type of diabetes that develops during pregnancy in women who didn't have diabetes before. It can affect the health of both the mother and the baby but usually resolves after childbirth.",
+    "related": ["risk factors for gestational diabetes", "managing gestational diabetes", "effects of GDM on baby"],
+    "category": "diabetes"
+  },
+  "what is prediabetes": {
+    "answer": "Prediabetes means your blood sugar levels are higher than normal, but not high enough yet to be diagnosed as type 2 diabetes. It's a warning sign, but also an opportunity to make lifestyle changes to prevent full-blown diabetes.",
+    "related": ["reversing prediabetes", "symptoms of prediabetes", "diet for prediabetes"],
+    "category": "diabetes"
+  },
+  "what is an a1c test": {
+    "answer": "The A1C test (also known as hemoglobin A1c or HbA1c) is a blood test that provides information about your average blood glucose (sugar) levels over the past 2 to 3 months. It's a key test for diagnosing and managing diabetes.",
+    "related": ["normal A1C levels", "how to lower A1C", "A1C vs fasting glucose"],
+    "category": "diabetes"
+  },
+  "what is hypoglycemia": {
+    "answer": "Hypoglycemia is a condition characterized by abnormally low blood sugar (glucose) levels. It can occur in people with diabetes who take too much insulin or certain medications, or skip meals.",
+    "related": ["symptoms of hypoglycemia", "treating low blood sugar", "causes of hypoglycemia"],
+    "category": "diabetes"
+  },
+  "what is hyperglycemia": {
+    "answer": "Hyperglycemia is the medical term for high blood sugar. It's a common problem for people with diabetes and can be caused by not enough insulin, eating too many carbohydrates, or stress/illness.",
+    "related": ["symptoms of hyperglycemia", "treating high blood sugar", "long-term effects of hyperglycemia"],
+    "category": "diabetes"
+  },
+  "how does diet affect blood sugar": {
+    "answer": "Diet has a direct impact on blood sugar. Carbohydrates are broken down into glucose, raising blood sugar. Protein and fat have less direct impact, but can affect how quickly carbs are absorbed. Balanced meals are key.",
+    "related": ["best foods for blood sugar control", "foods to avoid with diabetes", "carb counting for diabetes"],
+    "category": "diabetes"
+  },
+  "what is diabetic neuropathy": {
+    "answer": "Diabetic neuropathy is a type of nerve damage that can occur if you have diabetes. High blood sugar can injure nerve fibers throughout your body, but most often it affects the nerves in your legs and feet.",
+    "related": ["symptoms of diabetic neuropathy", "types of diabetic neuropathy", "treating nerve damage in diabetes"],
+    "category": "diabetes"
+  },
+  "what is diabetic retinopathy": {
+    "answer": "Diabetic retinopathy is a diabetes complication that affects eyes. It's caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye (retina). It can lead to blindness if untreated.",
+    "related": ["symptoms of diabetic retinopathy", "preventing diabetic retinopathy", "diabetic eye exam"],
+    "category": "diabetes"
+  },
+  "what is diabetic nephropathy": {
+    "answer": "Diabetic nephropathy is a serious kidney-related complication of type 1 and type 2 diabetes. It's caused by damage to the small blood vessels in your kidneys, leading to impaired kidney function.",
+    "related": ["symptoms of diabetic nephropathy", "preventing kidney damage diabetes", "treatment for diabetic kidney disease"],
+    "category": "diabetes"
+  },
+  "what is a diabetic foot ulcer": {
+    "answer": "A diabetic foot ulcer is an open sore or wound that occurs in approximately 15 percent of patients with diabetes. They are commonly located on the bottom of the foot and can be serious if not treated promptly, sometimes leading to amputation.",
+    "related": ["preventing diabetic foot ulcers", "treating foot ulcers", "diabetic foot care tips"],
+    "category": "diabetes"
+  },
+  "what is the glycemic index": {
+    "answer": "The Glycemic Index (GI) is a system that ranks carbohydrate-containing foods by how much they raise blood sugar levels after eating. Foods with a high GI raise blood sugar quickly, while low GI foods have a slower, more gradual effect.",
+    "related": ["low GI foods for diabetes", "how to use glycemic index", "glycemic load explained"],
+    "category": "diabetes"
+  },
+  "what are common diabetes medications": {
+    "answer": "Common diabetes medications include Metformin (often first-line for Type 2), sulfonylureas, SGLT2 inhibitors, GLP-1 receptor agonists, and insulin (for Type 1 and sometimes Type 2). The choice depends on the individual.",
+    "related": ["metformin side effects", "types of insulin", "new diabetes drugs"],
+    "category": "diabetes"
+  },
+  "how often should diabetics check blood sugar": {
+    "answer": "The frequency of blood sugar checking varies based on the type of diabetes, medication, and individual needs. Type 1 diabetics often check multiple times a day. Type 2 diabetics on certain medications may check less frequently.",
+    "related": ["blood sugar monitoring tips", "continuous glucose monitors (CGM)", "target blood sugar ranges"],
+    "category": "diabetes"
+  },
+  "what is an insulin pump": {
+    "answer": "An insulin pump is a small, computerized device that delivers insulin continuously through a small catheter inserted under the skin. It provides more flexible insulin delivery compared to multiple daily injections.",
+    "related": ["how insulin pumps work", "benefits of insulin pump", "insulin pump pros and cons"],
+    "category": "diabetes"
+  },
+  "what is diabetic ketoacidosis": {
+    "answer": "Diabetic ketoacidosis (DKA) is a serious complication of diabetes that occurs when your body produces high levels of blood acids called ketones. It develops when there isn't enough insulin in the body to allow blood sugar into cells for energy.",
+    "related": ["symptoms of DKA", "treating DKA", "preventing DKA"],
+    "category": "diabetes"
+  },
+  "what is hyperosmolar hyperglycemic state (hhs)": {
+    "answer": "Hyperosmolar Hyperglycemic State (HHS) is a serious complication of type 2 diabetes. It occurs when blood sugar levels become extremely high, leading to severe dehydration without the presence of significant ketones.",
+    "related": ["symptoms of HHS", "treating HHS", "DKA vs HHS"],
+    "category": "diabetes"
+  },
+  "can diabetes cause weight gain": {
+    "answer": "Yes, while Type 1 diabetes can cause initial weight loss, starting insulin therapy often leads to weight gain. For Type 2 diabetes, insulin resistance itself can contribute to weight gain, and some medications can also cause it.",
+    "related": ["managing weight with diabetes", "diabetes medications and weight", "healthy weight loss for diabetics"],
+    "category": "diabetes"
+  },
+  "what is the role of exercise in diabetes management": {
+    "answer": "Exercise is vital for diabetes management. It helps lower blood sugar, improves insulin sensitivity, aids in weight management, and reduces the risk of heart disease. Regular physical activity can be as effective as some medications.",
+    "related": ["best exercises for diabetics", "exercise precautions for diabetes", "how exercise lowers blood sugar"],
+    "category": "diabetes"
+  },
+  "what is diabetic diet": {
+    "answer": "A diabetic diet is not a specific restrictive diet but rather a healthy eating plan that emphasizes nutrient-dense foods, consistent meal times, and controlled portions of carbohydrates to manage blood sugar levels effectively.",
+    "related": ["sample diabetic meal plan", "foods to include in diabetic diet", "healthy eating for blood sugar"],
+    "category": "diabetes"
+  },
+  "what are artificial sweeteners": {
+    "answer": "Artificial sweeteners are sugar substitutes that provide a sweet taste without the calories or carbohydrates of sugar. They can be helpful for managing blood sugar but should be consumed in moderation.",
+    "related": ["safe artificial sweeteners for diabetics", "natural sweeteners vs artificial", "effects of artificial sweeteners on gut health"],
+    "category": "diabetes"
+  },
+  "how to prevent type 2 diabetes": {
+    "answer": "Preventing Type 2 diabetes largely involves lifestyle changes: maintaining a healthy weight, eating a balanced diet, engaging in regular physical activity, and avoiding smoking. Early detection of prediabetes is also crucial.",
+    "related": ["can prediabetes be reversed", "lifestyle changes for diabetes prevention", "risk assessment for type 2 diabetes"],
+    "category": "diabetes"
+  },
+  "what is metabolic control in diabetes": {
+    "answer": "Metabolic control in diabetes refers to the process of keeping blood glucose, blood pressure, and lipid (cholesterol) levels within target ranges to prevent or delay diabetes complications.",
+    "related": ["importance of good metabolic control", "achieving glycemic control", "factors affecting metabolic control"],
+    "category": "diabetes"
+  },
+  "can stress affect blood sugar": {
+    "answer": "Yes, stress can significantly affect blood sugar levels. When stressed, your body releases hormones like cortisol and adrenaline, which can cause blood sugar to rise, especially in people with diabetes.",
+    "related": ["stress management for diabetics", "how stress impacts glucose", "stress and insulin resistance"],
+    "category": "diabetes"
+  },
+  "what is continuous glucose monitoring (cgm)": {
+    "answer": "Continuous Glucose Monitoring (CGM) is a system that allows people with diabetes to track their glucose levels throughout the day and night using a small sensor inserted under the skin. It provides real-time data and trends.",
+    "related": ["benefits of CGM", "how CGM works", "CGM vs finger-prick tests"],
+    "category": "diabetes"
+  },
+  "what is bariatric surgery for diabetes": {
+    "answer": "Bariatric surgery, or weight-loss surgery, is a surgical option for some individuals with severe obesity and Type 2 diabetes. It can often lead to significant weight loss and, in many cases, remission of Type 2 diabetes.",
+    "related": ["types of bariatric surgery for diabetes", "who qualifies for bariatric surgery", "risks of bariatric surgery"],
+    "category": "diabetes"
+  },
+  "what is a diabetic alert dog": {
+    "answer": "A diabetic alert dog is a service animal specifically trained to detect changes in their owner's blood sugar levels through scent and alert them, helping to prevent episodes of hypoglycemia or hyperglycemia.",
+    "related": ["how diabetic alert dogs are trained", "benefits of diabetic alert dogs", "cost of diabetic alert dog"],
+    "category": "diabetes"
+  },
+  "what is the honeymoon phase in type 1 diabetes": {
+    "answer": "The 'honeymoon phase' in Type 1 diabetes is a temporary period shortly after diagnosis and starting insulin treatment where the pancreas may still produce some insulin. This can lead to lower insulin requirements and more stable blood sugars.",
+    "related": ["how long does honeymoon phase last", "managing honeymoon phase diabetes", "signs of honeymoon phase ending"],
+    "category": "diabetes"
+  },
+  "what is lada diabetes": {
+    "answer": "LADA (Latent Autoimmune Diabetes in Adults) is a form of Type 1 diabetes that develops in adults. It's often misdiagnosed as Type 2 because of its slower onset, but it's autoimmune and eventually requires insulin.",
+    "related": ["symptoms of LADA", "diagnosing LADA", "LADA vs Type 1 and Type 2"],
+    "category": "diabetes"
+  },
+  "what is brittle diabetes": {
+    "answer": "Brittle diabetes, or labile diabetes, refers to Type 1 diabetes that is extremely difficult to control, with frequent and unpredictable swings between very high and very low blood sugar levels.",
+    "related": ["causes of brittle diabetes", "managing brittle diabetes", "treatment for labile diabetes"],
+    "category": "diabetes"
+  },
+  "what are ketones": {
+    "answer": "Ketones are chemicals produced by the liver when the body breaks down fats for energy instead of carbohydrates. High levels of ketones in the blood can be a sign of diabetic ketoacidosis (DKA).",
+    "related": ["why are ketones dangerous for diabetics", "how to test for ketones", "ketones and low-carb diets"],
+    "category": "diabetes"
+  },
+  "what is glucagon": {
+    "answer": "Glucagon is a hormone produced by the pancreas that works to raise blood sugar levels. It's often used as an emergency treatment for severe hypoglycemia in people with diabetes.",
+    "related": ["how glucagon works", "when to use glucagon", "glucagon for low blood sugar"],
+    "category": "diabetes"
+  },
+  "what is insulin sensitivity": {
+    "answer": "Insulin sensitivity refers to how responsive your body's cells are to insulin. High insulin sensitivity means your cells efficiently use insulin to absorb glucose, while low sensitivity (insulin resistance) means they don't.",
+    "related": ["how to improve insulin sensitivity naturally", "factors affecting insulin sensitivity", "insulin resistance vs insulin sensitivity"],
+    "category": "diabetes"
+  },
+  "what is dawn phenomenon": {
+    "answer": "The dawn phenomenon is an early morning (usually between 2 a.m. and 8 a.m.) increase in blood sugar in people with diabetes due to a natural overnight surge in growth hormone, cortisol, and catecholamines.",
+    "related": ["managing dawn phenomenon", "causes of morning high blood sugar", "somogyi effect vs dawn phenomenon"],
+    "category": "diabetes"
+  },
+  "what is somogyi effect": {
+    "answer": "The Somogyi effect (or rebound hyperglycemia) is a phenomenon in which an overdose of insulin causes blood glucose levels to drop too low, leading the body to release hormones that raise blood sugar to very high levels.",
+    "related": ["how to prevent somogyi effect", "symptoms of somogyi effect", "dawn phenomenon vs somogyi effect"],
+    "category": "diabetes"
+  },
+  "what is a healthy diabetic plate": {
+    "answer": "A healthy diabetic plate often follows the 'plate method': fill half your plate with non-starchy vegetables, one-quarter with lean protein, and one-quarter with carbohydrates like whole grains or starchy vegetables.",
+    "related": ["diabetic meal planning", "plate method for blood sugar control", "portion control for diabetes"],
+    "category": "diabetes"
+  },
+  "can genetics cause diabetes": {
+    "answer": "Yes, genetics play a role in both Type 1 and Type 2 diabetes. Type 1 has a genetic predisposition, and Type 2 diabetes often runs in families, indicating a strong genetic component, though lifestyle is also crucial.",
+    "related": ["family history and diabetes risk", "inheriting diabetes", "genetic testing for diabetes risk"],
+    "category": "diabetes"
+  },
+  "what is the role of the pancreas in diabetes": {
+    "answer": "The pancreas produces insulin and glucagon, two hormones vital for blood sugar regulation. In diabetes, either the pancreas doesn't produce enough insulin (Type 1) or the body can't use the insulin it produces effectively (Type 2).",
+    "related": ["pancreas function diabetes", "beta cells diabetes", "islet cells pancreas"],
+    "category": "diabetes"
+  },
+  "what is glucometer": {
+    "answer": "A glucometer is a medical device used to measure the approximate concentration of glucose in the blood (blood sugar). It's a key tool for people with diabetes to monitor their levels at home.",
+    "related": ["how to use a glucometer", "choosing a glucometer", "glucometer accuracy"],
+    "category": "diabetes"
+  },
+  "what is fasting blood sugar": {
+    "answer": "Fasting blood sugar (FPG) is a measurement of your blood glucose level after you have not eaten for at least 8 hours. It's a common test used to diagnose prediabetes and diabetes.",
+    "related": ["normal fasting blood sugar levels", "what affects fasting blood sugar", "how to prepare for FPG test"],
+    "category": "diabetes"
+  },
+  "what is postprandial blood sugar": {
+    "answer": "Postprandial blood sugar refers to your blood glucose level measured after eating a meal, typically 1 or 2 hours afterward. It helps assess how your body handles carbohydrates from food.",
+    "related": ["normal postprandial blood sugar", "target post-meal glucose", "managing post-meal spikes"],
+    "category": "diabetes"
+  },
+  "what is a diabetes educator": {
+    "answer": "A diabetes educator is a healthcare professional who specializes in helping people with diabetes learn how to manage their condition effectively. They provide guidance on diet, exercise, medication, and coping strategies.",
+    "related": ["benefits of diabetes education", "finding a diabetes educator", "what does a CDE do"],
+    "category": "diabetes"
+  },
+  "what is a dietician for diabetes": {
+    "answer": "A registered dietitian (RD) or registered dietitian nutritionist (RDN) specializing in diabetes can provide personalized nutrition advice to help manage blood sugar, weight, and overall health for people with diabetes.",
+    "related": ["diabetes meal planning with a dietitian", "nutrition advice for diabetics", "finding a diabetes nutritionist"],
+    "category": "diabetes"
+  },
+  "what is a diabetic retinopathy screening": {
+    "answer": "A diabetic retinopathy screening is an eye exam that uses special equipment to check for signs of damage to the blood vessels in the retina, a common complication of diabetes that can lead to vision loss.",
+    "related": ["how often diabetic eye exam", "what happens during retinopathy screening", "preventing diabetic eye problems"],
+    "category": "diabetes"
+  },
+  "what is the link between obesity and type 2 diabetes": {
+    "answer": "Obesity is a major risk factor for Type 2 diabetes. Excess body fat, particularly around the waist, can lead to insulin resistance, making it harder for the body to use insulin effectively and eventually leading to high blood sugar.",
+    "related": ["how weight loss helps diabetes", "metabolic changes in obesity and diabetes", "preventing obesity for diabetes"],
+    "category": "diabetes"
+  },
+  "can diabetes cause fatigue": {
+    "answer": "Yes, fatigue is a very common symptom of both undiagnosed and poorly managed diabetes. High blood sugar prevents cells from getting the glucose they need for energy, leading to tiredness and lethargy.",
+    "related": ["managing diabetes fatigue", "causes of fatigue in diabetics", "diabetes and energy levels"],
+    "category": "diabetes"
+  },
+  "what is diabetic coma": {
+    "answer": "A diabetic coma is a life-threatening complication that causes unconsciousness in people with diabetes. It can be caused by extremely high blood sugar (hyperglycemic coma) or extremely low blood sugar (hypoglycemic coma).",
+    "related": ["symptoms of diabetic coma", "first aid for diabetic coma", "preventing diabetic coma"],
+    "category": "diabetes"
+  },
+  "what are healthy snacks for diabetics": {
+    "answer": "Healthy snacks for diabetics include nuts, seeds, fresh fruits (in moderation), vegetables with hummus, Greek yogurt, hard-boiled eggs, or a small portion of cheese. Focus on protein and fiber to stabilize blood sugar.",
+    "related": ["low-carb diabetic snacks", "snack ideas for blood sugar control", "quick diabetic snacks"],
+    "category": "diabetes"
+  },
+  "what is glucotoxicity": {
+    "answer": "Glucotoxicity refers to the damaging effects of chronically high blood glucose levels on the insulin-producing beta cells of the pancreas, and on the peripheral tissues that are meant to respond to insulin.",
+    "related": ["effects of glucotoxicity", "reversing glucotoxicity", "high blood sugar damage"],
+    "category": "diabetes"
+  },
+  "what is lipotoxicity": {
+    "answer": "Lipotoxicity refers to the damaging effects of high levels of certain fats (lipids) on cells and tissues, particularly the pancreas and liver, contributing to insulin resistance and beta-cell dysfunction in Type 2 diabetes.",
+    "related": ["causes of lipotoxicity", "impact of fats on diabetes", "lipotoxicity and metabolic syndrome"],
+    "category": "diabetes"
+  },
+  "what is the 'dawn phenomenon'": {
+    "answer": "The dawn phenomenon is a rise in blood glucose levels that occurs in the early morning (typically between 2 AM and 8 AM) in people with diabetes, even without eating. It's due to the body's natural release of hormones.",
+    "related": ["how to manage dawn phenomenon", "causes of early morning high blood sugar", "somogyi effect vs dawn phenomenon"],
+    "category": "diabetes"
+  },
+  "what is 'diabetes insipidus'": {
+    "answer": "Diabetes insipidus is a rare condition where the kidneys are unable to conserve water, leading to excessive urination and thirst. It is unrelated to diabetes mellitus (sugar diabetes) and involves a different hormone (vasopressin).",
+    "related": ["symptoms of diabetes insipidus", "types of diabetes insipidus", "treating diabetes insipidus"],
+    "category": "diabetes"
+  },
+  "what is the link between sleep and diabetes": {
+    "answer": "Poor sleep can negatively impact blood sugar control. Insufficient sleep can increase insulin resistance, alter appetite-regulating hormones, and elevate stress, all contributing to higher blood glucose levels.",
+    "related": ["how sleep affects blood sugar", "sleep recommendations for diabetics", "sleep apnea and diabetes"],
+    "category": "diabetes"
+  },
+  "what is diabetic dermopathy": {
+    "answer": "Diabetic dermopathy, also known as 'shin spots,' is a common skin condition in people with diabetes, appearing as reddish-brown, scaly patches, often on the shins. It's caused by changes in small blood vessels.",
+    "related": ["symptoms of diabetic dermopathy", "diabetic skin conditions", "treating shin spots diabetes"],
+    "category": "diabetes"
+  },
+  "what is acanthosis nigricans": {
+    "answer": "Acanthosis Nigricans (AN) is a skin condition characterized by dark, velvety patches in body folds and creases, such as the neck, armpits, and groin. It's often a sign of insulin resistance and can indicate prediabetes or Type 2 diabetes.",
+    "related": ["symptoms of acanthosis nigricans", "treating acanthosis nigricans", "AN and diabetes risk"],
+    "category": "diabetes"
+  },
+  "what is lipodystrophy in diabetes": {
+    "answer": "Lipodystrophy in diabetes refers to changes in fatty tissue under the skin, often at insulin injection sites. Lipoatrophy is fat loss, and lipohypertrophy is fat buildup, which can impair insulin absorption.",
+    "related": ["preventing lipodystrophy insulin", "managing injection site issues", "insulin injection techniques"],
+    "category": "diabetes"
+  },
+  "what is a diabetic alert system": {
+    "answer": "A diabetic alert system can refer to various technologies like Continuous Glucose Monitors (CGMs) with alarms, or even trained service animals (diabetic alert dogs), that provide alerts when blood sugar levels are out of target range.",
+    "related": ["CGM alert features", "diabetic alert technologies", "blood sugar alarm systems"],
+    "category": "diabetes"
+  },
+  "what are target blood sugar ranges for diabetics": {
+    "answer": "Target blood sugar ranges vary by individual, but generally: before a meal, 80-130 mg/dL; 1-2 hours after a meal, less than 180 mg/dL. These targets should be discussed with your doctor.",
+    "related": ["ideal blood sugar levels", "factors affecting blood sugar targets", "personalized glucose targets"],
+    "category": "diabetes"
+  },
+  "how to fill the health recommendation form": {
+    "answer": "To fill the form: 1. Select your **Primary Health Condition** (e.g., Heart Disease, Diabetes). 2. Choose your current **Risk Level** (Healthy, Borderline, Moderate, High). 3. Check the boxes for the **Types of Plans** you want (Diet, Workout, Medication). 4. List any **Dietary Allergies**. 5. Click **Generate My Personalized Plan**.",
+    "related": [
+      "what do the risk levels mean in the form",
+      "what data is used for recommendations",
+      "is this medical advice"
+    ],
+    "category": "form_help"
+  },
+  "what do the risk levels mean in the form": {
+    "answer": "The **Risk Level** (Healthy, Borderline, Moderate, High) helps us tailor your recommendations. 'Healthy' means you're generally well and need maintenance tips. 'Borderline' indicates early signs or mild risk factors. 'Moderate' suggests established risk factors needing attention. 'High' implies a significant risk or existing condition requiring careful management.",
+    "related": [
+      "how is my risk level determined",
+      "what if my risk level isn't listed",
+      "can I change my risk level"
+    ],
+    "category": "form_help"
+  },
+  "what data is used for recommendations": {
+    "answer": "Our recommendations are based on general health guidelines for your selected primary health condition (Heart Disease or Diabetes), your chosen risk level, and the types of plans you request (Diet, Workout, Medication). We also consider any dietary allergies you specify.",
+    "related": ["how accurate are the recommendations", "is my data saved", "what if I have multiple conditions"],
+    "category": "form_help"
+  },
+  "which tests need to be done to examine heart results": {
+    "answer": "To examine heart health results, common tests include: **Blood tests** (cholesterol panel, triglycerides, hs-CRP, blood glucose), **Electrocardiogram (ECG/EKG)**, **Echocardiogram**, **Stress Test** (exercise or pharmacological), and sometimes **Cardiac CT** or **MRI** to assess arteries and heart structure.",
+    "related": [
+      "what is an ECG",
+      "how to interpret cholesterol levels",
+      "what is a stress test"
+    ],
+    "category": "heart_tests"
+  },
+  "which tests need to be done to examine diabetes results": {
+    "answer": "To examine diabetes results, key tests are: **Fasting Plasma Glucose (FPG)**, **A1C test**, and sometimes an **Oral Glucose Tolerance Test (OGTT)**. For ongoing management, regular **blood sugar monitoring** at home (with a glucometer or CGM) is essential, along with periodic checks for complications like **kidney function tests** and **eye exams**.",
+    "related": [
+      "what is a normal A1C",
+      "how to prepare for a fasting glucose test",
+      "what do blood sugar readings mean"
+    ],
+    "category": "diabetes_tests"
+  },
+  "what does the primary health condition field mean": {
+    "answer": "The 'Primary Health Condition' field asks you to select the main health issue you're looking for recommendations on. Currently, you can choose between 'Heart Disease' or 'Diabetes'. This helps us narrow down the most relevant advice for you.",
+    "related": ["what if I have both heart disease and diabetes", "can I get recommendations for other conditions", "why choose only one condition"],
+    "category": "form_help"
+  },
+  "what does the risk level field mean": {
+    "answer": "The 'Risk Level' field helps us understand the severity of your condition or your risk of developing it. 'Healthy' implies no current concerns, while 'High' suggests a diagnosed condition or significant risk factors. Your choice here guides the intensity and focus of the recommendations.",
+    "related": ["how to determine my risk level", "can my risk level change", "is this a diagnosis"],
+    "category": "form_help"
+  },
+  "what does the types of plans field mean": {
+    "answer": "The 'Types of Plans' field lets you choose which kinds of health guidance you'd like. You can select 'Diet' for nutritional advice, 'Workout' for exercise routines, and 'Medication' for general information on common treatments. Select one or all that apply to your needs.",
+    "related": ["can I choose only diet", "what if I'm already on medication", "are these plans personalized"],
+    "category": "form_help"
+  },
+  "what does the dietary allergies field mean": {
+    "answer": "The 'Dietary Allergies' field allows you to list any food allergies (e.g., 'dairy', 'nuts', 'gluten'). This ensures that any dietary recommendations provided are safe and appropriate for you, avoiding ingredients that could cause an allergic reaction.",
+    "related": ["why do you need my allergies", "what if I have multiple allergies", "can I list intolerances here"],
+    "category": "form_help"
+  },
+  "how to use the generated personalized plan": {
+    "answer": "Once you click 'Generate My Personalized Plan', the system will provide tailored recommendations based on your input. Review the diet, workout, and medication information. Remember, this is general guidance; always consult with a healthcare professional for personalized medical advice.",
+    "related": ["is the plan printable", "how often should I generate a new plan", "who created these plans"],
+    "category": "form_help"
+  },
+  "what is the normal range for fasting blood glucose": {
+    "answer": "For non-diabetic individuals, a normal fasting blood glucose level is typically less than 100 mg/dL (5.6 mmol/L). Levels between 100-125 mg/dL (5.6-6.9 mmol/L) indicate prediabetes, and 126 mg/dL (7.0 mmol/L) or higher on two separate tests indicates diabetes.",
+    "related": ["how to lower fasting glucose", "what affects fasting glucose", "diabetes diagnosis criteria"],
+    "category": "diabetes_tests"
+  },
+  "what is the normal range for a1c": {
+    "answer": "For non-diabetic individuals, a normal A1C level is below 5.7%. An A1C between 5.7% and 6.4% indicates prediabetes, and 6.5% or higher indicates diabetes. For diagnosed diabetics, target A1C is often below 7%.",
+    "related": ["how to interpret A1C", "benefits of lower A1C", "A1C test frequency"],
+    "category": "diabetes_tests"
+  },
+  "how often should i get a cholesterol test": {
+    "answer": "Healthy adults should generally get their cholesterol checked every 4 to 6 years. If you have risk factors for heart disease or are over 40, your doctor might recommend more frequent testing.",
+    "related": ["what does a lipid panel show", "preparing for cholesterol test", "understanding HDL LDL numbers"],
+    "category": "heart_tests"
+  },
+  
+  "what is a blood pressure monitor": {
+    "answer": "A blood pressure monitor is a device used to measure blood pressure. Home monitors typically consist of an inflatable cuff and a gauge to read the pressure. Regular home monitoring can help manage hypertension.",
+    "related": ["best home blood pressure monitors", "how to choose a BP monitor", "accuracy of home BP monitors"],
+    "category": "heart_tests"
+  },
+  "what is a glucose tolerance test": {
+    "answer": "An Oral Glucose Tolerance Test (OGTT) measures your body's response to sugar. You'll have a fasting blood sugar test, then drink a sugary solution, and your blood sugar will be measured again at specific intervals (e.g., 1 and 2 hours). It's often used to diagnose gestational diabetes or prediabetes.",
+    "related": ["preparing for OGTT", "interpreting OGTT results", "when is OGTT used"],
+    "category": "diabetes_tests"
+  },
+  "what is a c-reactive protein (crp) test": {
+    "answer": "A C-reactive protein (CRP) test measures the level of CRP in your blood, a marker of inflammation. A high-sensitivity CRP (hs-CRP) test can help assess your risk for heart disease, as inflammation plays a role in atherosclerosis.",
+    "related": ["hs-CRP and heart disease risk", "what causes high CRP", "how to lower CRP"],
+    "category": "heart_tests"
+  },
+  "what are microalbuminuria tests": {
+    "answer": "Microalbuminuria tests check for small amounts of protein (albumin) in your urine. This is an early sign of kidney damage, especially important for people with diabetes or high blood pressure, as it indicates diabetic nephropathy risk.",
+    "related": ["why test for albumin in urine", "normal microalbuminuria levels", "preventing kidney damage"],
+    "category": "diabetes_tests"
+  },
+  "what is a diabetic eye exam": {
+    "answer": "A diabetic eye exam is a comprehensive eye examination performed by an ophthalmologist or optometrist that specifically looks for signs of diabetic retinopathy and other eye conditions caused by diabetes.",
+    "related": ["how often diabetic eye exam needed", "what to expect during diabetic eye exam", "diabetic eye care tips"],
+    "category": "diabetes_tests"
+  },
+  "what is a lipid panel": {
+    "answer": "A lipid panel (or lipid profile) is a blood test that measures your cholesterol and triglyceride levels. It typically includes total cholesterol, LDL ('bad') cholesterol, HDL ('good') cholesterol, and triglycerides.",
+    "related": ["preparing for lipid panel", "understanding lipid panel results", "target lipid levels"],
+    "category": "heart_tests"
+  }
+}
